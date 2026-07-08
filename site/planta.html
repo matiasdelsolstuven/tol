@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gestión Integral de Residuos Industriales, Equipos e Infraestructura — TOL</title>
+<meta name="description" content="TOL: asesoría, servicios y equipos para la valorización de residuos industriales en Chile. Manejo integral, trazabilidad y cumplimiento de la Ley REP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="aos.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Open Sans,sans-serif;color:#111111}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+[data-aos]{opacity:0}
+:root{--navy:#092737;--navy2:#1a4a5e;--yellow:#F8EA37}
+
+/* Utility layout */
+.wrap{max-width:1200px;margin:0 auto}
+.eyebrow{display:inline-block;background:var(--navy);color:var(--yellow);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:5px 12px;margin-bottom:16px}
+.sec{padding:96px 64px}
+.sec h2{font-size:38px;font-weight:800;color:var(--navy);line-height:1.15}
+.lead{font-size:16px;color:#555;line-height:1.8;max-width:720px}
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.icon{width:56px;height:56px;display:flex;align-items:center;justify-content:center;background:var(--navy);margin-bottom:18px}
+.icon svg{fill:var(--yellow)}
+.btn{display:inline-block;background:var(--yellow);color:var(--navy);padding:14px 32px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;transition:opacity .2s}
+.btn:hover{opacity:.85}
+.btn-outline{display:inline-block;border:2px solid #fff;color:#fff;padding:12px 30px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;transition:background .2s,color .2s}
+.btn-outline:hover{background:#fff;color:var(--navy)}
+.vermas{display:inline-flex;align-items:center;gap:6px;color:var(--navy);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-top:14px}
+.vermas:hover{color:#c9a800}
+
+@media(max-width:1000px){
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .sec{padding:56px 22px!important}
+  .sec h2{font-size:28px}
+  .g2,.g3,.g4{grid-template-columns:1fr!important}
+  h1{font-size:34px!important}
+}
+</style>
+</head>
+<body>
+
+<style>
+.tol-nav{position:fixed;top:0;left:0;right:0;z-index:9000;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 64px;height:80px;border-bottom:3px solid #F8EA37;box-shadow:0 2px 4px rgba(0,0,0,.08)}
+.tol-nav .logo img{height:40px;width:auto;display:block}
+.tol-nav .links{display:flex;align-items:center;gap:8px}
+.nav-link{font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(9,39,55,.65);text-decoration:none;text-transform:uppercase;letter-spacing:.8px;padding:8px 12px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.nav-link:hover,.nav-link.active{color:#092737;border-bottom-color:#F8EA37}
+.nav-cta{background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-decoration:none;padding:10px 20px;text-transform:uppercase;letter-spacing:.8px;margin-left:16px;transition:opacity .2s}
+.nav-cta:hover{opacity:.85}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.nav-hamburger span{width:24px;height:2px;background:#092737;display:block;transition:.3s}
+.mob-overlay{display:none;position:fixed;inset:0;background:#092737;z-index:8999;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.mob-overlay.open{display:flex}
+.mob-link{font-family:Open Sans,sans-serif;font-size:20px;font-weight:600;color:rgba(255,255,255,.8);text-decoration:none;text-transform:uppercase;letter-spacing:1px;padding:16px;transition:color .2s}
+.mob-link:hover{color:#F8EA37}
+.mob-close{position:absolute;top:24px;right:32px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer}
+body{padding-top:80px}
+@media(max-width:900px){
+  .tol-nav .links{display:none}
+  .nav-hamburger{display:flex}
+}
+@media(max-width:600px){
+  .tol-nav{padding:0 20px}
+}
+</style>
+
+<nav class="tol-nav">
+  <a href="#inicio" class="logo"><img src="logo.png" alt="TOL"></a>
+  <div class="links">
+    <a href="#inicio" class="nav-link">Inicio</a><a href="#nosotros" class="nav-link">Nosotros</a><a href="#servicios" class="nav-link">Servicios</a><a href="#equipos" class="nav-link">Equipos</a><a href="#materiales" class="nav-link">Materiales</a><a href="#noticias" class="nav-link">Noticias</a>
+    <a href="https://www.instagram.com/tolpucon/" target="_blank" style="display:flex;align-items:center;color:rgba(9,39,55,.6);margin-left:8px;transition:color .2s" title="Instagram TOL"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+    <a href="#contacto" class="nav-cta">Cotización</a>
+  </div>
+  <button class="nav-hamburger" id="tolHamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mob-overlay" id="tolMobMenu">
+  <button class="mob-close" id="tolMobClose">&times;</button>
+  <a href="#inicio" class="mob-link">Inicio</a><a href="#nosotros" class="mob-link">Nosotros</a><a href="#servicios" class="mob-link">Servicios</a><a href="#equipos" class="mob-link">Equipos</a><a href="#materiales" class="mob-link">Materiales</a><a href="#noticias" class="mob-link">Noticias</a>
+  <a href="#contacto" style="margin-top:16px;background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:16px;font-weight:700;text-decoration:none;padding:14px 32px;text-transform:uppercase">Cotización</a>
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById('tolHamburger');
+  var menu=document.getElementById('tolMobMenu');
+  var close=document.getElementById('tolMobClose');
+  if(btn)btn.addEventListener('click',function(){menu.classList.add('open')});
+  if(close)close.addEventListener('click',function(){menu.classList.remove('open')});
+  document.querySelectorAll('.mob-link').forEach(function(l){
+    l.addEventListener('click',function(){menu.classList.remove('open')});
+  });
+})();
+</script>
+
+<!-- ===== HERO ===== -->
+<div id="inicio" style="position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%)"></div>
+  <div style="position:absolute;inset:0;opacity:.05;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:22px 22px"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(9,39,55,.94) 45%,rgba(9,39,55,.35) 100%)"></div>
+  <div class="wrap" style="position:relative;padding:0 64px;width:100%">
+    <div style="max-width:680px">
+      <span class="eyebrow" data-aos="fade-up">Gestión integral de residuos</span>
+      <h1 style="font-size:52px;font-weight:800;color:#fff;line-height:1.1;margin-bottom:22px" data-aos="fade-up">Soluciones completas en residuos industriales, equipos e infraestructura para todo Chile</h1>
+      <p style="font-size:17px;font-weight:300;color:rgba(255,255,255,.78);line-height:1.75;margin-bottom:36px;max-width:560px" data-aos="fade-up" data-aos-delay="100">Asesoría experta, servicios a tu medida y disponibilidad de equipos para valorizar tus residuos industriales. Una forma distinta de gestionar tus desechos, con responsabilidad y trazabilidad de principio a fin.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap" data-aos="fade-up" data-aos-delay="200">
+        <a href="#contacto" class="btn">Cotiza con nosotros →</a>
+        <a href="#servicios" class="btn-outline">Conoce nuestros servicios</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== INTRO / NOSOTROS ===== -->
+<section id="nosotros" class="sec" style="background:#fff;text-align:center">
+  <div class="wrap">
+    <span class="eyebrow" data-aos="fade-up">Quiénes somos</span>
+    <h2 data-aos="fade-up" style="max-width:900px;margin:0 auto 20px">Entregamos la mejor alternativa en asesoría, servicios y equipamiento para valorizar tus residuos</h2>
+    <p class="lead" data-aos="fade-up" style="margin:0 auto">Nuestro compromiso es con el medioambiente: buscamos que cada residuo tenga una disposición y un tratamiento responsables. Te acompañamos para alcanzar los más altos estándares sanitarios y construir, juntos, una operación más sostenible.</p>
+  </div>
+</section>
+
+<!-- ===== BENEFICIOS ===== -->
+<section class="sec" style="background:#092737;padding-top:80px;padding-bottom:80px">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:56px" data-aos="fade-up">
+      <span class="eyebrow" style="background:#F8EA37;color:#092737">Por qué elegirnos</span>
+      <h2 style="color:#fff">Ventajas que marcan la diferencia</h2>
+    </div>
+    <div class="grid g4">
+      <div data-aos="fade-up" data-aos-delay="0" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:32px 28px">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93V19c0-.55-.45-1-1-1s-1 .45-1 1v.93C7.06 19.44 4 16.08 4 12c0-.35.03-.69.07-1.03L9 15.9V17c0 1.1.9 2 2 2v1.93zm6.31-2.4c-.26-.81-1-1.39-1.9-1.39H16v-3c0-.55-.45-1-1-1H9v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41C17.92 5.77 20 8.65 20 12c0 2.08-.81 3.98-2.11 5.4z"/></svg></div>
+        <h3 style="font-size:17px;font-weight:700;color:#fff;margin-bottom:8px">Ahorro real en costos</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.7">Optimizamos tu operación para reducir el gasto asociado al manejo de residuos.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="60" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:32px 28px">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zM18 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></div>
+        <h3 style="font-size:17px;font-weight:700;color:#fff;margin-bottom:8px">Flota moderna y especializada</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.7">Vehículos de última generación, listos para cada tipo de residuo y faena.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="120" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:32px 28px">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+        <h3 style="font-size:17px;font-weight:700;color:#fff;margin-bottom:8px">Servicio de excelencia</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.7">Un equipo comprometido con la calidad y el detalle en cada retiro.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="180" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:32px 28px">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg></div>
+        <h3 style="font-size:17px;font-weight:700;color:#fff;margin-bottom:8px">Reportes mensuales</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.7">Recibes informes de gestión claros y periódicos sobre tus residuos.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="0" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:32px 28px">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"/></svg></div>
+        <h3 style="font-size:17px;font-weight:700;color:#fff;margin-bottom:8px">Manejo integral</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.7">Cubrimos todo el ciclo: desde el origen hasta la disposición final certificada.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="60" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:32px 28px">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg></div>
+        <h3 style="font-size:17px;font-weight:700;color:#fff;margin-bottom:8px">Equipos innovadores</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.7">Tecnología y soluciones de vanguardia disponibles para tu operación.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="120" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:32px 28px">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M20 3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h5v2h6v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 13H4V5h16v11z"/></svg></div>
+        <h3 style="font-size:17px;font-weight:700;color:#fff;margin-bottom:8px">Portal en línea</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.7">Accede a tu información y documentación de trazabilidad cuando la necesites.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="180" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:32px 28px">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div>
+        <h3 style="font-size:17px;font-weight:700;color:#fff;margin-bottom:8px">Asesoría en Ley REP</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.7">Te acompañamos y capacitamos para cumplir con la normativa vigente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICIOS ===== -->
+<section id="servicios" class="sec" style="background:#fff">
+  <div class="wrap">
+    <div style="max-width:760px;margin-bottom:52px" data-aos="fade-up">
+      <span class="eyebrow">Servicios</span>
+      <h2>Soluciones inteligentes para la gestión integral de tus residuos</h2>
+      <p class="lead" style="margin-top:16px">¿Buscas una respuesta específica para tu desafío de residuos? Contamos con múltiples alternativas y también diseñamos propuestas hechas a tu medida.</p>
+    </div>
+    <div class="grid g3">
+      <div class="svc" data-aos="fade-up" data-aos-delay="0"><h3>Consultoría en gestión de residuos</h3><p>Diagnosticamos tu operación y definimos el plan más eficiente para manejar cada residuo.</p><a href="#contacto" class="vermas">Ver →</a></div>
+      <div class="svc" data-aos="fade-up" data-aos-delay="60"><h3>Capacitación de equipos</h3><p>Formamos a tus colaboradores en la correcta separación y manipulación de residuos.</p><a href="#contacto" class="vermas">Ver →</a></div>
+      <div class="svc" data-aos="fade-up" data-aos-delay="120"><h3>Implementación de puntos limpios</h3><p>Habilitamos y ponemos en marcha puntos de acopio adaptados a tu recinto.</p><a href="#contacto" class="vermas">Ver →</a></div>
+      <div class="svc" data-aos="fade-up" data-aos-delay="0"><h3>Trazabilidad y seguimiento</h3><p>Registramos el recorrido de cada residuo con documentación verificable de extremo a extremo.</p><a href="#contacto" class="vermas">Ver →</a></div>
+      <div class="svc" data-aos="fade-up" data-aos-delay="60"><h3>Retiro, transporte y valorización</h3><p>Retiramos y trasladamos tus residuos para darles una segunda vida siempre que sea posible.</p><a href="#contacto" class="vermas">Ver →</a></div>
+      <div class="svc" data-aos="fade-up" data-aos-delay="120"><h3>Operación y gestión en terreno</h3><p>Nos hacemos cargo de la operación diaria de tu patio o planta de residuos.</p><a href="#contacto" class="vermas">Ver →</a></div>
+      <div class="svc" data-aos="fade-up" data-aos-delay="0"><h3>Trituración y reducción de volumen</h3><p>Reducimos el tamaño de los residuos para optimizar su transporte y aprovechamiento.</p><a href="#contacto" class="vermas">Ver →</a></div>
+      <div class="svc" data-aos="fade-up" data-aos-delay="60"><h3>Arriendo y montaje de infraestructura</h3><p>Diseñamos, arrendamos e instalamos la infraestructura especial que tu proyecto requiere.</p><a href="#contacto" class="vermas">Ver →</a></div>
+      <div class="svc" data-aos="fade-up" data-aos-delay="120"><h3>Recolección y compostaje de orgánicos</h3><p>Recuperamos los residuos orgánicos y los transformamos mediante compostaje.</p><a href="#contacto" class="vermas">Ver →</a></div>
+    </div>
+  </div>
+</section>
+<style>
+.svc{background:#fff;border:1px solid #eee;border-left:4px solid #F8EA37;padding:28px 26px;transition:box-shadow .2s,transform .2s}
+.svc:hover{box-shadow:0 12px 28px rgba(9,39,55,.12);transform:translateY(-3px)}
+.svc h3{font-size:18px;font-weight:700;color:#092737;margin-bottom:10px;line-height:1.3}
+.svc p{font-size:14px;color:#666;line-height:1.7}
+</style>
+
+<!-- ===== EQUIPOS ===== -->
+<section id="equipos" class="sec" style="background:#f6f6f6">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:52px" data-aos="fade-up">
+      <span class="eyebrow">Equipos</span>
+      <h2>Equipamiento para cada etapa del proceso</h2>
+    </div>
+    <div class="grid g3">
+      <div class="eq" data-aos="fade-up" data-aos-delay="0"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg></div><h3>Contenedores industriales</h3><p>Contenedores robustos para el acopio de residuos industriales en obra o planta.</p></div>
+      <div class="eq" data-aos="fade-up" data-aos-delay="60"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM7 9v6h10V9z"/></svg></div><h3>Compactadores de residuos</h3><p>Reducen el volumen de los desechos para optimizar el almacenamiento y el transporte.</p></div>
+      <div class="eq" data-aos="fade-up" data-aos-delay="120"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z"/></svg></div><h3>Volteadores y contenedores auto-descarga</h3><p>Facilitan el vaciado seguro y rápido, sin manipulación manual.</p></div>
+      <div class="eq" data-aos="fade-up" data-aos-delay="0"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M12 3l9 7-2 1-7-5-7 5-2-1zm0 6l9 7-9 6-9-6z"/></svg></div><h3>Basculadores de residuos</h3><p>Sistemas de inclinación para descargar contenedores con total control.</p></div>
+      <div class="eq" data-aos="fade-up" data-aos-delay="60"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M4 4h16v16H4zm4 4v8h8V8z"/></svg></div><h3>Enfardadoras industriales</h3><p>Compactan y enfardan materiales reciclables para su acopio y despacho.</p></div>
+      <div class="eq" data-aos="fade-up" data-aos-delay="120"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M12 8a4 4 0 100 8 4 4 0 000-8zm0-6l2 3h-4zm0 20l-2-3h4z"/></svg></div><h3>Equipos complementarios</h3><p>Una variedad de equipos de apoyo para completar tu operación de residuos.</p></div>
+      <div class="eq" data-aos="fade-up" data-aos-delay="0"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 22L5.71 22c.5-1.03 1.29-2.75 2.29-4 .97 2.05 2.5 4 2.5 4s1.64-2.58 2.5-4c.86 1.42 1.5 3 2 4h2c-1.14-3.57-2.8-7.61-8-10 2.69-1 6-2.56 8.5-2 0 0-2.14-2-4-2z"/></svg></div><h3>Maquinaria para orgánicos</h3><p>Equipos diseñados para el procesamiento y la valorización de residuos orgánicos.</p></div>
+    </div>
+  </div>
+</section>
+<style>
+.eq{background:#fff;padding:32px 28px;border:1px solid #e6e6e6;transition:box-shadow .2s,transform .2s}
+.eq:hover{box-shadow:0 12px 28px rgba(9,39,55,.12);transform:translateY(-3px)}
+.eq h3{font-size:17px;font-weight:700;color:#092737;margin-bottom:8px;line-height:1.3}
+.eq p{font-size:14px;color:#666;line-height:1.7}
+</style>
+
+<!-- ===== MATERIALES ===== -->
+<section id="materiales" class="sec" style="background:#fff">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:52px" data-aos="fade-up">
+      <span class="eyebrow">Qué gestionamos</span>
+      <h2>Materiales que recibimos y valorizamos</h2>
+    </div>
+    <div class="grid g4" style="gap:14px">
+      <div class="mat" data-aos="fade-up" data-aos-delay="0"><span>Residuos industriales</span><small>Corrientes industriales de todo tipo</small></div>
+      <div class="mat" data-aos="fade-up" data-aos-delay="40"><span>Plásticos</span><small>PET, HDPE, PVC y más</small></div>
+      <div class="mat" data-aos="fade-up" data-aos-delay="80"><span>Papel y cartón</span><small>Reciclaje con valor de recompra</small></div>
+      <div class="mat" data-aos="fade-up" data-aos-delay="120"><span>Metales</span><small>Fierro, acero y aluminio</small></div>
+      <div class="mat" data-aos="fade-up" data-aos-delay="0"><span>Orgánicos</span><small>Compostaje y valorización</small></div>
+      <div class="mat" data-aos="fade-up" data-aos-delay="40"><span>Madera</span><small>Reutilización o trituración</small></div>
+      <div class="mat" data-aos="fade-up" data-aos-delay="80"><span>Neumáticos</span><small>Gestión y reciclaje seguro</small></div>
+      <div class="mat" data-aos="fade-up" data-aos-delay="120"><span>Pilas</span><small>Disposición responsable</small></div>
+      <div class="mat" data-aos="fade-up" data-aos-delay="0"><span>Aceites y lubricantes</span><small>Retiro y tratamiento certificado</small></div>
+      <div class="mat" data-aos="fade-up" data-aos-delay="40"><span>Baterías</span><small>Manejo de residuos peligrosos</small></div>
+      <div class="mat" data-aos="fade-up" data-aos-delay="80"><span>Aparatos eléctricos y electrónicos</span><small>Reciclaje de RAEE</small></div>
+      <div class="mat" data-aos="fade-up" data-aos-delay="120"><span>Poda y verde</span><small>Compost o mulch</small></div>
+    </div>
+  </div>
+</section>
+<style>
+.mat{background:#092737;color:#fff;padding:26px 22px;display:flex;flex-direction:column;gap:6px;position:relative;overflow:hidden;transition:background .2s}
+.mat::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:#F8EA37}
+.mat:hover{background:#0c3348}
+.mat span{font-size:15px;font-weight:700}
+.mat small{font-size:12px;color:rgba(255,255,255,.55);line-height:1.5}
+</style>
+
+<!-- ===== NOTICIAS ===== -->
+<section id="noticias" class="sec" style="background:#f6f6f6">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:52px" data-aos="fade-up">
+      <span class="eyebrow">Noticias</span>
+      <h2>Lo último en TOL</h2>
+    </div>
+    <div class="grid g2">
+      <article class="news" data-aos="fade-right">
+        <div class="news-img"><svg width="42" height="42" viewBox="0 0 24 24" fill="rgba(248,234,55,.4)"><path d="M4 6h16v12H4zM2 4h20v16H2z"/></svg></div>
+        <div class="news-body">
+          <span class="news-tag">Gremial</span>
+          <h3>Reforzamos nuestro compromiso con el packaging sustentable</h3>
+          <p>Sumarnos a la principal red del sector nos permite impulsar, junto a otras empresas, una industria del envase y embalaje más circular y responsable.</p>
+          <a href="#contacto" class="vermas">Leer más →</a>
+        </div>
+      </article>
+      <article class="news" data-aos="fade-left">
+        <div class="news-img"><svg width="42" height="42" viewBox="0 0 24 24" fill="rgba(248,234,55,.4)"><path d="M20 8h-3V4H3v13h2a3 3 0 006 0h4a3 3 0 006 0h2v-5z"/></svg></div>
+        <div class="news-body">
+          <span class="news-tag">Caso de éxito</span>
+          <h3>Menos kilómetros y más reciclaje junto a un cliente industrial</h3>
+          <p>Rediseñamos la logística de retiro de un cliente y logramos reducir los viajes al mínimo, aumentando de paso la tasa de material recuperado.</p>
+          <a href="#contacto" class="vermas">Leer más →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<style>
+.news{background:#fff;display:flex;flex-direction:column;border:1px solid #e6e6e6;overflow:hidden}
+.news-img{height:200px;background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);display:flex;align-items:center;justify-content:center}
+.news-body{padding:28px 30px}
+.news-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#092737;background:#F8EA37;padding:3px 10px;margin-bottom:14px}
+.news h3{font-size:20px;font-weight:800;color:#092737;margin-bottom:12px;line-height:1.3}
+.news p{font-size:14px;color:#666;line-height:1.75}
+</style>
+
+<!-- ===== NEWSLETTER ===== -->
+<section style="background:#F8EA37;padding:64px 64px">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap" data-aos="fade-up">
+    <div style="max-width:520px">
+      <h2 style="font-size:30px;font-weight:800;color:#092737;margin-bottom:8px">Recibe nuestras novedades</h2>
+      <p style="font-size:15px;color:rgba(9,39,55,.75);line-height:1.6">Suscríbete a nuestro boletín y entérate de nuevos servicios, equipos y buenas prácticas en gestión de residuos.</p>
+    </div>
+    <form onsubmit="return false" style="display:flex;gap:10px;flex-wrap:wrap;flex:1;min-width:280px;max-width:460px">
+      <input type="email" placeholder="Tu correo electrónico" required style="flex:1;min-width:200px;border:2px solid #092737;background:#fff;padding:14px 16px;font-family:Open Sans,sans-serif;font-size:14px;color:#092737">
+      <button type="submit" style="background:#092737;color:#fff;border:none;padding:14px 28px;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== CTA CONTACTO ===== -->
+<section id="contacto" style="position:relative;overflow:hidden;padding:110px 64px;text-align:center">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%)"></div>
+  <div style="position:absolute;inset:0;opacity:.05;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:22px 22px"></div>
+  <div class="wrap" style="position:relative;max-width:720px" data-aos="fade-up">
+    <h2 style="color:#fff;margin-bottom:16px">Realiza tu consulta o cotiza con nosotros</h2>
+    <p style="font-size:16px;color:rgba(255,255,255,.72);margin-bottom:36px;line-height:1.7">Cuéntanos sobre tu operación y diseñaremos un plan de gestión de residuos hecho a tu medida.</p>
+    <a href="https://wa.me/56984488002" target="_blank" class="btn">Contáctanos →</a>
+  </div>
+</section>
+
+<a href="https://wa.me/56984488002" target="_blank" style="position:fixed;bottom:28px;right:28px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.25);z-index:9999;transition:transform .2s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" title="WhatsApp TOL">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<footer style="background:#092737;padding:56px 64px 28px;color:#fff;font-family:Open Sans,sans-serif">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:44px" class="foot-grid">
+      <div>
+        <a href="#inicio"><img src="logo.png" alt="TOL" style="margin-bottom:18px"></a>
+        <p style="font-size:13px;color:rgba(255,255,255,.55);line-height:1.7;max-width:300px">Gestión integral de residuos industriales, equipos e infraestructura. Asesoría, valorización y trazabilidad para una operación más sostenible.</p>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Servicios</div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <a href="#servicios" style="font-size:13px;color:rgba(255,255,255,.6)">Consultoría en residuos</a>
+          <a href="#servicios" style="font-size:13px;color:rgba(255,255,255,.6)">Retiro y valorización</a>
+          <a href="#servicios" style="font-size:13px;color:rgba(255,255,255,.6)">Trazabilidad</a>
+          <a href="#servicios" style="font-size:13px;color:rgba(255,255,255,.6)">Puntos limpios</a>
+          <a href="#servicios" style="font-size:13px;color:rgba(255,255,255,.6)">Asesoría Ley REP</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Empresa</div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <a href="#nosotros" style="font-size:13px;color:rgba(255,255,255,.6)">Nosotros</a>
+          <a href="#equipos" style="font-size:13px;color:rgba(255,255,255,.6)">Equipos</a>
+          <a href="#materiales" style="font-size:13px;color:rgba(255,255,255,.6)">Materiales</a>
+          <a href="#noticias" style="font-size:13px;color:rgba(255,255,255,.6)">Noticias</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Contacto</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.6);line-height:1.9">
+          paula@tolpucon.cl<br>+56 9 8448 8002<br>+56 9 3913 2933<br>Camino Villarrica-Freire Km 3<br>Villarrica, La Araucanía
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <span style="font-size:12px;color:rgba(255,255,255,.3)">© 2026 TOL Gestión de Residuos · Villarrica, La Araucanía</span>
+      <div style="display:flex;gap:16px">
+        <a href="https://instagram.com/tolpucon" target="_blank" style="font-size:12px;color:rgba(255,255,255,.4)">Instagram</a>
+        <a href="https://facebook.com/tolpucon" target="_blank" style="font-size:12px;color:rgba(255,255,255,.4)">Facebook</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<style>
+@media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr!important;gap:32px!important}}
+@media(max-width:600px){.foot-grid{grid-template-columns:1fr!important}}
+</style>
+
+<script src="aos.js"></script>
+<script>
+  if (window.AOS) {
+    AOS.init({duration:700,easing:'ease-out-cubic',once:true,offset:60});
+  } else {
+    document.querySelectorAll('[data-aos]').forEach(function(el){ el.style.opacity = 1; });
+  }
+</script>
+</body>
+</html>
