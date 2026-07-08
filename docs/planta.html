@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nuestra Planta de Valorización — TOL</title>
+<meta name="description" content="Planta de valorización de residuos TOL. Alianza con POCK para transformar plásticos en productos sustentables.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Open Sans,sans-serif;color:#111111}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+[data-aos]{opacity:0}
+@media(max-width:768px){
+  .two-col{grid-template-columns:1fr!important}
+  .three-col{grid-template-columns:1fr!important}
+  .four-col{grid-template-columns:repeat(2,1fr)!important}
+  h1{font-size:36px!important}
+  h2{font-size:28px!important}
+}
+</style>
+</head>
+<body>
+
+<style>
+.tol-nav{position:fixed;top:0;left:0;right:0;z-index:9000;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 64px;height:80px;border-bottom:3px solid #F8EA37;box-shadow:0 2px 4px rgba(0,0,0,.08)}
+.tol-nav .logo img{height:40px;width:auto;display:block}
+.tol-nav .links{display:flex;align-items:center;gap:8px}
+.nav-link{font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(9,39,55,.65);text-decoration:none;text-transform:uppercase;letter-spacing:.8px;padding:8px 12px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.nav-link:hover,.nav-link.active{color:#092737;border-bottom-color:#F8EA37}
+.nav-cta{background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-decoration:none;padding:10px 20px;text-transform:uppercase;letter-spacing:.8px;margin-left:16px;transition:opacity .2s}
+.nav-cta:hover{opacity:.85}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.nav-hamburger span{width:24px;height:2px;background:#092737;display:block;transition:.3s}
+.mob-overlay{display:none;position:fixed;inset:0;background:#092737;z-index:8999;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.mob-overlay.open{display:flex}
+.mob-link{font-family:Open Sans,sans-serif;font-size:20px;font-weight:600;color:rgba(255,255,255,.8);text-decoration:none;text-transform:uppercase;letter-spacing:1px;padding:16px;transition:color .2s}
+.mob-link:hover{color:#F8EA37}
+.mob-close{position:absolute;top:24px;right:32px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer}
+body{padding-top:80px}
+@media(max-width:900px){
+  .tol-nav .links{display:none}
+  .nav-hamburger{display:flex}
+}
+@media(max-width:600px){
+  .tol-nav{padding:0 20px}
+}
+</style>
+
+<nav class="tol-nav">
+  <a href="index.html" class="logo"><img src="logo.png" alt="TOL"></a>
+  <div class="links">
+    <a href="nosotros.html" class="nav-link">Nosotros</a><a href="servicios.html" class="nav-link">Servicios</a><a href="planta.html" class="nav-link active">Nuestra Planta</a><a href="equipos.html" class="nav-link">Equipos</a><a href="casos-de-exito.html" class="nav-link">Casos de Éxito</a><a href="app-trazabilidad.html" class="nav-link">APP</a>
+    <a href="https://www.instagram.com/tolpucon/" target="_blank" style="display:flex;align-items:center;color:rgba(9,39,55,.6);margin-left:8px;transition:color .2s" title="Instagram TOL"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+    <a href="contacto.html" class="nav-cta">Cotizar</a>
+  </div>
+  <button class="nav-hamburger" id="tolHamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mob-overlay" id="tolMobMenu">
+  <button class="mob-close" id="tolMobClose">&times;</button>
+  <a href="index.html" class="mob-link">Inicio</a><a href="nosotros.html" class="mob-link">Nosotros</a><a href="servicios.html" class="mob-link">Servicios</a><a href="planta.html" class="mob-link">Nuestra Planta</a><a href="equipos.html" class="mob-link">Equipos</a><a href="casos-de-exito.html" class="mob-link">Casos de Éxito</a><a href="app-trazabilidad.html" class="mob-link">APP</a>
+  <a href="contacto.html" style="margin-top:16px;background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:16px;font-weight:700;text-decoration:none;padding:14px 32px;text-transform:uppercase">Cotizar</a>
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById('tolHamburger');
+  var menu=document.getElementById('tolMobMenu');
+  var close=document.getElementById('tolMobClose');
+  if(btn)btn.addEventListener('click',function(){menu.classList.add('open')});
+  if(close)close.addEventListener('click',function(){menu.classList.remove('open')});
+  // Auto-cerrar al hacer click en un link
+  document.querySelectorAll('.mob-link').forEach(function(l){
+    l.addEventListener('click',function(){menu.classList.remove('open')});
+  });
+  // Marcar link activo
+  var path=window.location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav-link,.mob-link').forEach(function(l){
+    if(l.href.includes(path))l.classList.add('active');
+  });
+})();
+</script>
+
+<!-- HERO full-bleed -->
+<div style="position:relative;height:90vh;min-height:500px;overflow:hidden">
+  <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(248,234,55,.4)"><path d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"/></svg>
+  <span style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(248,234,55,.6);letter-spacing:1px;text-transform:uppercase">Vista aérea de la planta</span>
+</div>
+  <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(9,39,55,.92) 40%,rgba(9,39,55,.3) 100%)"></div>
+  <div style="position:absolute;inset:0;display:flex;align-items:center;padding:0 64px">
+    <div style="max-width:620px">
+      <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">INFRAESTRUCTURA</span>
+      <h1 style="font-family:Open Sans,sans-serif;font-size:52px;font-weight:800;color:#fff;line-height:1.1;margin-bottom:20px" data-aos="fade-up">Nuestra Planta de Valorización</h1>
+      <p style="font-family:Open Sans,sans-serif;font-size:17px;font-weight:300;color:rgba(255,255,255,.75);line-height:1.7;margin-bottom:32px" data-aos="fade-up" data-aos-delay="100">Donde los residuos de la construcción se convierten en recursos. Clasificamos, procesamos y valoramos cada material para cerrar el ciclo.</p>
+      <a href="#proceso" data-aos="fade-up" data-aos-delay="200" style="display:inline-block;background:#F8EA37;color:#092737;padding:14px 32px;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px">Ver el proceso →</a>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<section style="background:#092737;padding:0">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)" class="four-col">
+    <div data-aos="fade-up" data-aos-delay="0" style="padding:36px 24px;text-align:center;border-right:1px solid rgba(255,255,255,.08)">
+      <div style="font-family:Open Sans,sans-serif;font-size:40px;font-weight:800;color:#F8EA37;line-height:1;margin-bottom:8px">54</div>
+      <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1.5px;line-height:1.4">Obras gestionadas</div>
+    </div><div data-aos="fade-up" data-aos-delay="100" style="padding:36px 24px;text-align:center;border-right:1px solid rgba(255,255,255,.08)">
+      <div style="font-family:Open Sans,sans-serif;font-size:40px;font-weight:800;color:#F8EA37;line-height:1;margin-bottom:8px">2.274m³</div>
+      <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1.5px;line-height:1.4">Residuos segregados</div>
+    </div><div data-aos="fade-up" data-aos-delay="200" style="padding:36px 24px;text-align:center;border-right:1px solid rgba(255,255,255,.08)">
+      <div style="font-family:Open Sans,sans-serif;font-size:40px;font-weight:800;color:#F8EA37;line-height:1;margin-bottom:8px">401m³</div>
+      <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1.5px;line-height:1.4">Material reutilizado</div>
+    </div><div data-aos="fade-up" data-aos-delay="300" style="padding:36px 24px;text-align:center;border-right:1px solid rgba(255,255,255,.08)">
+      <div style="font-family:Open Sans,sans-serif;font-size:40px;font-weight:800;color:#F8EA37;line-height:1;margin-bottom:8px">100%</div>
+      <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1.5px;line-height:1.4">Trazabilidad certificada</div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO imagen + texto -->
+<section id="proceso" style="background:#fff;padding:100px 64px">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center" class="two-col">
+    <div data-aos="fade-right">
+      <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:480px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(248,234,55,.4)"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+  <span style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(248,234,55,.6);letter-spacing:1px;text-transform:uppercase">Interior de la planta</span>
+</div>
+    </div>
+    <div data-aos="fade-left">
+      <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">QUIÉNES SOMOS</span>
+      <h2 style="font-family:Open Sans,sans-serif;font-size:36px;font-weight:800;color:#092737;margin-bottom:20px;line-height:1.2">Un centro de operaciones pensado para la economía circular</h2>
+      <p style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.8;margin-bottom:16px">Nuestra planta es el corazón de las operaciones TOL. Recibimos, clasificamos y procesamos los residuos de las obras que gestionamos, maximizando la valorización de cada material.</p>
+      <p style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.8">Operamos con resolución sanitaria vigente y bajo estrictos protocolos de trazabilidad. Cada tonelada de residuo tiene un destino documentado y verificable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVIDADES DE PLANTA -->
+
+<!-- 01 Pretratamiento -->
+<section id="proceso" style="background:#fff;padding:100px 64px">
+  <div style="max-width:1200px;margin:0 auto">
+    <div style="text-align:center;margin-bottom:80px" data-aos="fade-up">
+      <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">LO QUE HACEMOS</span>
+      <h2 style="font-family:Open Sans,sans-serif;font-size:38px;font-weight:800;color:#092737">Nuestros procesos</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center" class="two-col">
+      <div data-aos="fade-right">
+        <div style="position:relative;overflow:hidden;background:#092737">
+          <div style="padding-top:60%;position:relative">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%)">
+              <div style="width:72px;height:72px;border-radius:50%;border:3px solid rgba(248,234,55,.5);display:flex;align-items:center;justify-content:center">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="#F8EA37" style="margin-left:5px"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(248,234,55,.45);letter-spacing:2px;text-transform:uppercase">Video pendiente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <div style="width:52px;height:52px;background:#092737;color:#F8EA37;font-family:Open Sans,sans-serif;font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:20px">01</div>
+        <h3 style="font-family:Open Sans,sans-serif;font-size:28px;font-weight:800;color:#092737;margin-bottom:16px;line-height:1.2">Pretratamiento de Residuos</h3>
+        <p style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.8;margin-bottom:20px">Recibimos, pesamos y clasificamos cada residuo que ingresa a la planta. Separamos por tipo y preparamos para su destino óptimo: valorización, reciclaje o disposición certificada.</p>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li style="font-family:Open Sans,sans-serif;font-size:14px;color:#555;padding:10px 0;border-bottom:1px solid #eee;display:flex;align-items:center;gap:10px"><span style="width:6px;height:6px;background:#F8EA37;display:block;flex-shrink:0"></span>Clasificación por tipo de residuo</li>
+          <li style="font-family:Open Sans,sans-serif;font-size:14px;color:#555;padding:10px 0;border-bottom:1px solid #eee;display:flex;align-items:center;gap:10px"><span style="width:6px;height:6px;background:#F8EA37;display:block;flex-shrink:0"></span>Pesaje y registro con trazabilidad total</li>
+          <li style="font-family:Open Sans,sans-serif;font-size:14px;color:#555;padding:10px 0;display:flex;align-items:center;gap:10px"><span style="width:6px;height:6px;background:#F8EA37;display:block;flex-shrink:0"></span>Preparación para valorización o disposición certificada</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 Valorización -->
+<section style="background:#092737;padding:100px 64px">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center" class="two-col">
+    <div data-aos="fade-right">
+      <div style="width:52px;height:52px;background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:20px">02</div>
+      <h3 style="font-family:Open Sans,sans-serif;font-size:28px;font-weight:800;color:#fff;margin-bottom:16px;line-height:1.2">Valorización de Residuos Plásticos</h3>
+      <p style="font-family:Open Sans,sans-serif;font-size:15px;color:rgba(255,255,255,.7);line-height:1.8;margin-bottom:20px">Los plásticos recuperados son transformados en nuevos productos de alta calidad en alianza con POCK — sustituto del wood, fierro y hormigón para la construcción sustentable.</p>
+      <ul style="list-style:none;padding:0;margin:0 0 28px">
+        <li style="font-family:Open Sans,sans-serif;font-size:14px;color:rgba(255,255,255,.6);padding:10px 0;border-bottom:1px solid rgba(255,255,255,.1);display:flex;align-items:center;gap:10px"><span style="width:6px;height:6px;background:#F8EA37;display:block;flex-shrink:0"></span>280.000 kg de plástico extruído</li>
+        <li style="font-family:Open Sans,sans-serif;font-size:14px;color:rgba(255,255,255,.6);padding:10px 0;border-bottom:1px solid rgba(255,255,255,.1);display:flex;align-items:center;gap:10px"><span style="width:6px;height:6px;background:#F8EA37;display:block;flex-shrink:0"></span>400 árboles no cortados por año</li>
+        <li style="font-family:Open Sans,sans-serif;font-size:14px;color:rgba(255,255,255,.6);padding:10px 0;display:flex;align-items:center;gap:10px"><span style="width:6px;height:6px;background:#F8EA37;display:block;flex-shrink:0"></span>Alianza con POCK · 1er lugar Glocal Pucón 2022</li>
+      </ul>
+      <a href="https://pock.cl" target="_blank" style="display:inline-block;background:#F8EA37;color:#092737;padding:12px 28px;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px">Conocer POCK →</a>
+    </div>
+    <div data-aos="fade-left">
+      <div style="position:relative;overflow:hidden">
+        <div style="padding-top:60%;position:relative">
+          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border:1px solid rgba(248,234,55,.2);background:rgba(255,255,255,.04)">
+            <div style="width:72px;height:72px;border-radius:50%;border:3px solid rgba(248,234,55,.5);display:flex;align-items:center;justify-content:center">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="#F8EA37" style="margin-left:5px"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(248,234,55,.45);letter-spacing:2px;text-transform:uppercase">Video POCK pendiente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 Fabricación de equipos -->
+<section style="background:#f6f6f6;padding:100px 64px">
+  <div style="max-width:1200px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-bottom:48px" class="two-col">
+      <div data-aos="fade-right">
+        <div style="position:relative;overflow:hidden;background:#092737">
+          <div style="padding-top:60%;position:relative">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%)">
+              <div style="width:72px;height:72px;border-radius:50%;border:3px solid rgba(248,234,55,.5);display:flex;align-items:center;justify-content:center">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="#F8EA37" style="margin-left:5px"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(248,234,55,.45);letter-spacing:2px;text-transform:uppercase">Video pendiente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <div style="width:52px;height:52px;background:#092737;color:#F8EA37;font-family:Open Sans,sans-serif;font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:20px">03</div>
+        <h3 style="font-family:Open Sans,sans-serif;font-size:28px;font-weight:800;color:#092737;margin-bottom:16px;line-height:1.2">Fabricación de Equipos para Transporte y Disposición</h3>
+        <p style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.8;margin-bottom:20px">Diseñamos y fabricamos nuestros propios contenedores, bodegas y equipos especializados para la gestión de residuos en obra. Cada equipo es pensado para maximizar la segregación y facilitar el transporte.</p>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li style="font-family:Open Sans,sans-serif;font-size:14px;color:#555;padding:10px 0;border-bottom:1px solid #ddd;display:flex;align-items:center;gap:10px"><span style="width:6px;height:6px;background:#F8EA37;display:block;flex-shrink:0"></span>Contenedores 8m³ para obra</li>
+          <li style="font-family:Open Sans,sans-serif;font-size:14px;color:#555;padding:10px 0;border-bottom:1px solid #ddd;display:flex;align-items:center;gap:10px"><span style="width:6px;height:6px;background:#F8EA37;display:block;flex-shrink:0"></span>Bodegas de residuos peligrosos DS43 y DS148</li>
+          <li style="font-family:Open Sans,sans-serif;font-size:14px;color:#555;padding:10px 0;display:flex;align-items:center;gap:10px"><span style="width:6px;height:6px;background:#F8EA37;display:block;flex-shrink:0"></span>Diseño y fabricación a medida</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Foto grid -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:3px;background:#092737" data-aos="fade-up">
+      <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+        <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="rgba(248,234,55,.35)"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+        <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(248,234,55,.4);letter-spacing:1.5px;text-transform:uppercase">Foto pendiente</span>
+      </div>
+      <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+        <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="rgba(248,234,55,.35)"><path d="M17 8C8 10 5.9 16.17 3.82 22L5.71 22c.5-1.03 1.29-2.75 2.29-4 .97 2.05 2.5 4 2.5 4s1.64-2.58 2.5-4c.86 1.42 1.5 3 2 4h2c-1.14-3.57-2.8-7.61-8-10 2.69-1 6-2.56 8.5-2 0 0-2.14-2-4-2z"/></svg>
+        <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(248,234,55,.4);letter-spacing:1.5px;text-transform:uppercase">Foto pendiente</span>
+      </div>
+      <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+        <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="rgba(248,234,55,.35)"><path d="M12 3L4 15h5v6h6v-6h5L12 3z"/></svg>
+        <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(248,234,55,.4);letter-spacing:1.5px;text-transform:uppercase">Foto pendiente</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MATERIALES -->
+<section style="background:#f6f6f6;padding:100px 64px">
+  <div style="max-width:1200px;margin:0 auto">
+    <div style="text-align:center;margin-bottom:64px" data-aos="fade-up">
+      <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">QUÉ PROCESAMOS</span>
+      <h2 style="font-family:Open Sans,sans-serif;font-size:38px;font-weight:800;color:#092737">Materiales que recibimos</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:3px;background:#092737" class="four-col">
+      <div data-aos="fade-up" data-aos-delay="0" style="background:#fff;overflow:hidden">
+        <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(248,234,55,.4)"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+  <span style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(248,234,55,.6);letter-spacing:1px;text-transform:uppercase">Plásticos</span>
+</div>
+        <div style="padding:20px">
+          <h3 style="font-family:Open Sans,sans-serif;font-size:14px;font-weight:700;color:#092737;margin-bottom:6px">Plásticos</h3>
+          <p style="font-family:Open Sans,sans-serif;font-size:12px;color:#888;line-height:1.5">PET, HDPE, PVC → POCK</p>
+        </div>
+      </div><div data-aos="fade-up" data-aos-delay="60" style="background:#fff;overflow:hidden">
+        <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(248,234,55,.4)"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+  <span style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(248,234,55,.6);letter-spacing:1px;text-transform:uppercase">Papel y Cartón</span>
+</div>
+        <div style="padding:20px">
+          <h3 style="font-family:Open Sans,sans-serif;font-size:14px;font-weight:700;color:#092737;margin-bottom:6px">Papel y Cartón</h3>
+          <p style="font-family:Open Sans,sans-serif;font-size:12px;color:#888;line-height:1.5">Reciclaje con valor de compra</p>
+        </div>
+      </div><div data-aos="fade-up" data-aos-delay="120" style="background:#fff;overflow:hidden">
+        <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(248,234,55,.4)"><path d="M12 22c4.97 0 9-4.03 9-9-4.97 0-9 4.03-9 9zm0 0c0-4.97-4.03-9-9-9 0 4.97 4.03 9 9 9zm0-18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-5.66 2.34c-.78.78-.78 2.05 0 2.83.78.78 2.05.78 2.83 0 .78-.78.78-2.05 0-2.83-.78-.79-2.05-.79-2.83 0zm11.32 0c-.78-.78-2.05-.78-2.83 0-.78.78-.78 2.05 0 2.83.78.78 2.05.78 2.83 0 .78-.78.78-2.05 0-2.83zM12 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+  <span style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(248,234,55,.6);letter-spacing:1px;text-transform:uppercase">Metales</span>
+</div>
+        <div style="padding:20px">
+          <h3 style="font-family:Open Sans,sans-serif;font-size:14px;font-weight:700;color:#092737;margin-bottom:6px">Metales</h3>
+          <p style="font-family:Open Sans,sans-serif;font-size:12px;color:#888;line-height:1.5">Fierro, acero, aluminio</p>
+        </div>
+      </div><div data-aos="fade-up" data-aos-delay="180" style="background:#fff;overflow:hidden">
+        <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(248,234,55,.4)"><path d=""/></svg>
+  <span style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(248,234,55,.6);letter-spacing:1px;text-transform:uppercase">Residuos Orgánicos</span>
+</div>
+        <div style="padding:20px">
+          <h3 style="font-family:Open Sans,sans-serif;font-size:14px;font-weight:700;color:#092737;margin-bottom:6px">Residuos Orgánicos</h3>
+          <p style="font-family:Open Sans,sans-serif;font-size:12px;color:#888;line-height:1.5">Compostaje industrial</p>
+        </div>
+      </div><div data-aos="fade-up" data-aos-delay="240" style="background:#fff;overflow:hidden">
+        <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(248,234,55,.4)"><path d=""/></svg>
+  <span style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(248,234,55,.6);letter-spacing:1px;text-transform:uppercase">Madera</span>
+</div>
+        <div style="padding:20px">
+          <h3 style="font-family:Open Sans,sans-serif;font-size:14px;font-weight:700;color:#092737;margin-bottom:6px">Madera</h3>
+          <p style="font-family:Open Sans,sans-serif;font-size:12px;color:#888;line-height:1.5">Reutilización o trituración</p>
+        </div>
+      </div><div data-aos="fade-up" data-aos-delay="300" style="background:#fff;overflow:hidden">
+        <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(248,234,55,.4)"><path d=""/></svg>
+  <span style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(248,234,55,.6);letter-spacing:1px;text-transform:uppercase">Residuos Especiales</span>
+</div>
+        <div style="padding:20px">
+          <h3 style="font-family:Open Sans,sans-serif;font-size:14px;font-weight:700;color:#092737;margin-bottom:6px">Residuos Especiales</h3>
+          <p style="font-family:Open Sans,sans-serif;font-size:12px;color:#888;line-height:1.5">Gestión RETC</p>
+        </div>
+      </div><div data-aos="fade-up" data-aos-delay="360" style="background:#fff;overflow:hidden">
+        <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(248,234,55,.4)"><path d=""/></svg>
+  <span style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(248,234,55,.6);letter-spacing:1px;text-transform:uppercase">Escombros</span>
+</div>
+        <div style="padding:20px">
+          <h3 style="font-family:Open Sans,sans-serif;font-size:14px;font-weight:700;color:#092737;margin-bottom:6px">Escombros</h3>
+          <p style="font-family:Open Sans,sans-serif;font-size:12px;color:#888;line-height:1.5">Escombrera SEREMI</p>
+        </div>
+      </div><div data-aos="fade-up" data-aos-delay="420" style="background:#fff;overflow:hidden">
+        <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(248,234,55,.4)"><path d=""/></svg>
+  <span style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(248,234,55,.6);letter-spacing:1px;text-transform:uppercase">Poda y Verde</span>
+</div>
+        <div style="padding:20px">
+          <h3 style="font-family:Open Sans,sans-serif;font-size:14px;font-weight:700;color:#092737;margin-bottom:6px">Poda y Verde</h3>
+          <p style="font-family:Open Sans,sans-serif;font-size:12px;color:#888;line-height:1.5">Compost o mulch</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="position:relative;overflow:hidden;padding:120px 64px;text-align:center">
+  <div style="background:linear-gradient(135deg,#092737 0%,#1a4a5e 100%);height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.04;background:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px"></div>
+  <svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(248,234,55,.4)"><path d=""/></svg>
+  <span style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(248,234,55,.6);letter-spacing:1px;text-transform:uppercase">Imagen de fondo CTA</span>
+</div>
+  <div style="position:absolute;inset:0;background:rgba(9,39,55,.88)"></div>
+  <div style="position:relative;max-width:700px;margin:0 auto" data-aos="fade-up">
+    <h2 style="font-family:Open Sans,sans-serif;font-size:40px;font-weight:800;color:#fff;margin-bottom:16px">¿Necesitas gestionar los residuos de tu obra?</h2>
+    <p style="font-family:Open Sans,sans-serif;font-size:16px;color:rgba(255,255,255,.7);margin-bottom:40px;line-height:1.7">Cuéntanos sobre tu proyecto y diseñamos un plan de gestión a tu medida.</p>
+    <a href="contacto.html" style="display:inline-block;background:#F8EA37;color:#092737;padding:16px 40px;font-family:Open Sans,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px">Contáctanos →</a>
+  </div>
+</section>
+
+<a href="https://wa.me/56984488002" target="_blank" style="position:fixed;bottom:28px;right:28px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.25);z-index:9999;transition:transform .2s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" title="WhatsApp TOL">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<footer style="background:#092737;padding:52px 40px 28px;color:#fff;font-family:Open Sans,sans-serif;position:relative;z-index:6">
+  <div style="max-width:1200px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px">
+      <div>
+        <a href="index.html"><img src="logo.png" alt="TOL"></a>
+        <p style="font-size:13px;color:rgba(255,255,255,.55);line-height:1.7">Gestión integral de residuos industriales y constructivos en La Araucanía.</p>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Servicios</div>
+        <div style="margin-bottom:8px"><a href="servicios.html#srv-01" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Asesoría en Gestión de Residuos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-02" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Transporte y Disposición de Residuos No Peligrosos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-03" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Administración de Patio de Residuos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-04" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Valorización de Residuos Plásticos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-05" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Pretratamiento de Residuos Valorizables</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-06" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Trazabilidad Total</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-07" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Soluciones para Residuos Peligrosos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-08" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Municipios</a></div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Empresa</div>
+        <div style="margin-bottom:8px"><a href="/nosotros.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Nosotros</a></div><div style="margin-bottom:8px"><a href="/casos-de-exito.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Casos de Éxito</a></div><div style="margin-bottom:8px"><a href="/planta.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Nuestra Planta</a></div><div style="margin-bottom:8px"><a href="/app-trazabilidad.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">APP Trazabilidad</a></div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Contacto</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.6);line-height:1.9">
+          paula@tolpucon.cl<br>+56 9 8448 8002<br>+56 9 3913 2933<br>Camino Villarrica-Freire Km3<br>Villarrica, La Araucanía
+        </div>
+        <a href="https://tolpucon-develop.netlify.app/#/login" target="_blank" style="display:inline-block;margin-top:16px;border:1px solid #F8EA37;color:#F8EA37;font-size:12px;font-weight:700;padding:8px 16px;text-decoration:none;text-transform:uppercase;letter-spacing:1px">Portal Clientes →</a>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <span style="font-size:12px;color:rgba(255,255,255,.3)">© 2026 TOL Gestión de Residuos · Villarrica, La Araucanía</span>
+      <div style="display:flex;gap:16px">
+        <a href="https://instagram.com/tolpucon" target="_blank" style="font-size:12px;color:rgba(255,255,255,.4);text-decoration:none">Instagram</a>
+        <a href="https://facebook.com/tolpucon" target="_blank" style="font-size:12px;color:rgba(255,255,255,.4);text-decoration:none">Facebook</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({duration:700,easing:'ease-out-cubic',once:true,offset:80});</script>
+</body>
+</html>

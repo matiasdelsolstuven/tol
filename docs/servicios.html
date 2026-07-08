@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios — TOL Gestión de Residuos</title>
+<meta name="description" content="8 servicios de gestión integral de residuos para obras y empresas en Chile. Trazabilidad, cumplimiento Ley REP y economía circular.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Open Sans,sans-serif;color:#111111}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+[data-aos]{opacity:0}
+.srv-block > div:first-child { min-height:440px; }
+@media(max-width:768px){
+  .srv-block{grid-template-columns:1fr!important}
+  .srv-block > div:first-child{min-height:260px}
+}
+
+/* HERO */
+.hero{background:#092737;padding:72px 64px 64px;position:relative;overflow:hidden}
+.hero.with-photo{background:linear-gradient(rgba(9,39,55,.88),rgba(9,39,55,.94)),url('images/hero/tol-camion.png') center/cover no-repeat}
+.hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,.015) 0,rgba(255,255,255,.015) 1px,transparent 0,transparent 50%);background-size:20px 20px}
+.hero-inner{max-width:1200px;margin:0 auto;position:relative}
+.hero-tag{display:inline-block;background:#F8EA37;color:#092737;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:4px 12px;margin-bottom:20px}
+.hero h1{font-size:52px;font-weight:800;color:#fff;line-height:1.05;max-width:700px;margin-bottom:16px}
+.hero p{font-size:16px;font-weight:300;color:rgba(255,255,255,.65);max-width:540px;line-height:1.7;margin-bottom:28px}
+@media(max-width:900px){.hero{padding:48px 24px}.hero h1{font-size:34px}}
+</style>
+</head>
+<body>
+
+<style>
+.tol-nav{position:fixed;top:0;left:0;right:0;z-index:9000;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 64px;height:80px;border-bottom:3px solid #F8EA37;box-shadow:0 2px 4px rgba(0,0,0,.08)}
+.tol-nav .logo img{height:40px;width:auto;display:block}
+.tol-nav .links{display:flex;align-items:center;gap:8px}
+.nav-link{font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(9,39,55,.65);text-decoration:none;text-transform:uppercase;letter-spacing:.8px;padding:8px 12px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.nav-link:hover,.nav-link.active{color:#092737;border-bottom-color:#F8EA37}
+.nav-cta{background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-decoration:none;padding:10px 20px;text-transform:uppercase;letter-spacing:.8px;margin-left:16px;transition:opacity .2s}
+.nav-cta:hover{opacity:.85}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.nav-hamburger span{width:24px;height:2px;background:#092737;display:block;transition:.3s}
+.mob-overlay{display:none;position:fixed;inset:0;background:#092737;z-index:8999;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.mob-overlay.open{display:flex}
+.mob-link{font-family:Open Sans,sans-serif;font-size:20px;font-weight:600;color:rgba(255,255,255,.8);text-decoration:none;text-transform:uppercase;letter-spacing:1px;padding:16px;transition:color .2s}
+.mob-link:hover{color:#F8EA37}
+.mob-close{position:absolute;top:24px;right:32px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer}
+body{padding-top:80px}
+@media(max-width:900px){
+  .tol-nav .links{display:none}
+  .nav-hamburger{display:flex}
+}
+@media(max-width:600px){
+  .tol-nav{padding:0 20px}
+}
+</style>
+
+<nav class="tol-nav">
+  <a href="index.html" class="logo"><img src="logo.png" alt="TOL"></a>
+  <div class="links">
+    <a href="nosotros.html" class="nav-link">Nosotros</a><a href="servicios.html" class="nav-link active">Servicios</a><a href="planta.html" class="nav-link">Nuestra Planta</a><a href="equipos.html" class="nav-link">Equipos</a><a href="casos-de-exito.html" class="nav-link">Casos de Éxito</a><a href="app-trazabilidad.html" class="nav-link">APP</a>
+    <a href="https://www.instagram.com/tolpucon/" target="_blank" style="display:flex;align-items:center;color:rgba(9,39,55,.6);margin-left:8px;transition:color .2s" title="Instagram TOL"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+    <a href="contacto.html" class="nav-cta">Cotizar</a>
+  </div>
+  <button class="nav-hamburger" id="tolHamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mob-overlay" id="tolMobMenu">
+  <button class="mob-close" id="tolMobClose">&times;</button>
+  <a href="index.html" class="mob-link">Inicio</a><a href="nosotros.html" class="mob-link">Nosotros</a><a href="servicios.html" class="mob-link">Servicios</a><a href="planta.html" class="mob-link">Nuestra Planta</a><a href="equipos.html" class="mob-link">Equipos</a><a href="casos-de-exito.html" class="mob-link">Casos de Éxito</a><a href="app-trazabilidad.html" class="mob-link">APP</a>
+  <a href="contacto.html" style="margin-top:16px;background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:16px;font-weight:700;text-decoration:none;padding:14px 32px;text-transform:uppercase">Cotizar</a>
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById('tolHamburger');
+  var menu=document.getElementById('tolMobMenu');
+  var close=document.getElementById('tolMobClose');
+  if(btn)btn.addEventListener('click',function(){menu.classList.add('open')});
+  if(close)close.addEventListener('click',function(){menu.classList.remove('open')});
+  // Auto-cerrar al hacer click en un link
+  document.querySelectorAll('.mob-link').forEach(function(l){
+    l.addEventListener('click',function(){menu.classList.remove('open')});
+  });
+  // Marcar link activo
+  var path=window.location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav-link,.mob-link').forEach(function(l){
+    if(l.href.includes(path))l.classList.add('active');
+  });
+})();
+</script>
+
+<!-- HERO -->
+<div class="hero with-photo">
+  <div class="hero-inner">
+    <div class="hero-tag" data-aos="fade-up">NUESTROS SERVICIOS</div>
+    <h1 data-aos="fade-up" data-aos-delay="80">Gestión integral de residuos para obras y empresas</h1>
+    <p data-aos="fade-up" data-aos-delay="160">8 servicios diseñados para transformar tus residuos en recursos, reducir costos y cumplir con la normativa vigente en Chile.</p>
+  </div>
+</div>
+
+<!-- STATS -->
+<section style="background:#092737;padding:48px 24px"><div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);text-align:center"><div style="padding:20px;border-right:1px solid rgba(255,255,255,.1)"><div style="font-family:Open Sans,sans-serif;font-size:44px;font-weight:800;color:#F8EA37;line-height:1;margin-bottom:8px">8</div><div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:1px">Servicios</div></div><div style="padding:20px;border-right:1px solid rgba(255,255,255,.1)"><div style="font-family:Open Sans,sans-serif;font-size:44px;font-weight:800;color:#F8EA37;line-height:1;margin-bottom:8px">54</div><div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:1px">Obras gestionadas</div></div><div style="padding:20px;border-right:1px solid rgba(255,255,255,.1)"><div style="font-family:Open Sans,sans-serif;font-size:44px;font-weight:800;color:#F8EA37;line-height:1;margin-bottom:8px">40%</div><div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:1px">Reducción en costos</div></div><div style="padding:20px;border-right:1px solid rgba(255,255,255,.1)"><div style="font-family:Open Sans,sans-serif;font-size:44px;font-weight:800;color:#F8EA37;line-height:1;margin-bottom:8px">100%</div><div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:1px">Trazabilidad</div></div></div></section>
+
+<!-- ÍNDICE RÁPIDO -->
+<section style="background:#fff;padding:48px 24px;border-bottom:1px solid #eee">
+  <div style="max-width:1200px;margin:0 auto">
+    <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+      <a href="#srv-01" style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;color:#fff;background:#092737;padding:8px 16px;text-decoration:none;border:2px solid #F8EA37">★ Asesoría en Gestión de Residuos</a><a href="#srv-02" style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:#092737;background:#f6f6f6;padding:8px 16px;text-decoration:none;border:1px solid #ddd;transition:background .2s">Transporte y Disposición de Residuos No Peligrosos</a><a href="#srv-03" style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:#092737;background:#f6f6f6;padding:8px 16px;text-decoration:none;border:1px solid #ddd;transition:background .2s">Administración de Patio de Residuos</a><a href="#srv-04" style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:#092737;background:#f6f6f6;padding:8px 16px;text-decoration:none;border:1px solid #ddd;transition:background .2s">Valorización de Residuos Plásticos</a><a href="#srv-05" style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:#092737;background:#f6f6f6;padding:8px 16px;text-decoration:none;border:1px solid #ddd;transition:background .2s">Pretratamiento de Residuos Valorizables</a><a href="#srv-06" style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:#092737;background:#f6f6f6;padding:8px 16px;text-decoration:none;border:1px solid #ddd;transition:background .2s">Trazabilidad Total</a><a href="#srv-07" style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:#092737;background:#f6f6f6;padding:8px 16px;text-decoration:none;border:1px solid #ddd;transition:background .2s">Soluciones para Residuos Peligrosos</a><a href="#srv-08" style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:#092737;background:#f6f6f6;padding:8px 16px;text-decoration:none;border:1px solid #ddd;transition:background .2s">Municipios</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<div id="srv-01" data-aos="fade-up"><section style="background:#092737">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr" class="srv-block">
+    <div style="background:rgba(255,255,255,.04);min-height:440px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border:2px dashed rgba(248,234,55,.2)">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="rgba(248,234,55,.5)"><path d="M8 5v14l11-7z"/></svg>
+      <div style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:600;color:rgba(248,234,55,.65);letter-spacing:1px;text-transform:uppercase;text-align:center;padding:0 32px">VIDEO PENDIENTE<br><span style="font-size:11px;opacity:.7;font-weight:400">Video LinkedIn — Asesoría en gestión de residuos</span></div>
+    </div>
+    <div style="padding:52px 48px;display:flex;flex-direction:column;justify-content:center">
+      <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#092737;background:#F8EA37;display:inline-block;padding:4px 10px;margin-bottom:16px">SERVICIO PRIORITARIO</span>
+      <h2 style="font-family:Open Sans,sans-serif;font-size:28px;font-weight:800;color:#fff;margin-bottom:16px;line-height:1.3">Asesoría en Gestión de Residuos</h2>
+      <p style="font-family:Open Sans,sans-serif;font-size:15px;color:rgba(255,255,255,.72);line-height:1.8;margin-bottom:28px">Diseñamos e implementamos el sistema de gestión de residuos para tu obra o empresa. Diagnóstico, plan a medida, segregación, capacitación y reportes para cumplimiento Ley REP y Cámara Chilena de la Construcción.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:12px">¿Qué incluye?</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:rgba(255,255,255,.65);padding:6px 0;border-bottom:1px solid rgba(255,255,255,.08)">✓ Diagnóstico inicial</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:rgba(255,255,255,.65);padding:6px 0;border-bottom:1px solid rgba(255,255,255,.08)">✓ Plan de gestión a medida</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:rgba(255,255,255,.65);padding:6px 0;border-bottom:1px solid rgba(255,255,255,.08)">✓ Puntos de segregación instalados</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:rgba(255,255,255,.65);padding:6px 0;border-bottom:1px solid rgba(255,255,255,.08)">✓ Capacitación al equipo de obra</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:rgba(255,255,255,.65);padding:6px 0">✓ Reportes mensuales + certificados</li></ul>
+        </div>
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:12px">Beneficios</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:rgba(255,255,255,.65);padding:6px 0">→ Reduce hasta 40% costos</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:rgba(255,255,255,.65);padding:6px 0">→ Cumplimiento Ley REP documentado</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:rgba(255,255,255,.65);padding:6px 0">→ Reportes Cámara Chilena Construcción</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:rgba(255,255,255,.65);padding:6px 0">→ Trazabilidad completa</li></ul>
+        </div>
+      </div>
+      <div style="margin-top:28px"><a href="contacto.html" style="display:inline-block;background:#F8EA37;color:#092737;padding:12px 24px;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.8px">Cotizar este servicio →</a></div>
+    </div>
+  </div>
+</section></div>
+<div id="srv-02" data-aos="fade-up"><section style="background:#f6f6f6">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr" class="srv-block">
+    <div style="padding:52px 48px;display:flex;flex-direction:column;justify-content:center">
+      <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">SERVICIO</span>
+      <h2 style="font-family:Open Sans,sans-serif;font-size:28px;font-weight:800;color:#092737;margin-bottom:16px;line-height:1.3">Transporte y Disposición de Residuos No Peligrosos</h2>
+      <p style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.8;margin-bottom:28px">Proveemos contenedores (2, 8, 9, 22, 32 m³) con reemplazo automático al llenarse y transporte a puntos de disposición autorizada. Certificados de disposición final en cada retiro.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">¿Qué incluye?</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Contenedores 2 — 32 m³</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Reemplazo automático al llenarse</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Flota de camiones propios</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Certificados de disposición final</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">✓ Resolución sanitaria vigente</li></ul>
+        </div>
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">Beneficios</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Operación sin interrupciones</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Cumplimiento sanitario asegurado</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Sin costos ocultos</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Documentación completa</li></ul>
+        </div>
+      </div>
+      <div style="margin-top:28px"><a href="contacto.html" style="display:inline-block;background:#F8EA37;color:#092737;padding:12px 24px;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.8px">Cotizar este servicio →</a></div>
+    </div>
+    <div style="background:#eef3f6;min-height:440px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border:2px dashed rgba(9,39,55,.12)">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="rgba(9,39,55,.2)"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+      <div style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:600;color:rgba(9,39,55,.35);letter-spacing:1px;text-transform:uppercase;text-align:center;padding:0 32px">FOTOS PENDIENTES<br><span style="font-size:11px;opacity:.7;font-weight:400">Camiones y contenedores en obra</span></div>
+    </div>
+  </div>
+</section></div>
+<div id="srv-03" data-aos="fade-up"><section style="background:#fff">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr" class="srv-block">
+    <div style="background:#eef3f6;min-height:440px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border:2px dashed rgba(9,39,55,.12)">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="rgba(9,39,55,.2)"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+      <div style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:600;color:rgba(9,39,55,.35);letter-spacing:1px;text-transform:uppercase;text-align:center;padding:0 32px">IMAGEN PENDIENTE<br><span style="font-size:11px;opacity:.7;font-weight:400">Patio de residuos administrado por TOL</span></div>
+    </div>
+    <div style="padding:52px 48px;display:flex;flex-direction:column;justify-content:center">
+      <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">SERVICIO</span>
+      <h2 style="font-family:Open Sans,sans-serif;font-size:28px;font-weight:800;color:#092737;margin-bottom:16px;line-height:1.3">Administración de Patio de Residuos</h2>
+      <p style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.8;margin-bottom:28px">Operamos y administramos el patio de residuos de tu empresa o proyecto. Organización por tipo de material, registros de ingreso y egreso, y coordinación de retiros según cronograma.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">¿Qué incluye?</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Organización y señalética del patio</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Registro de ingresos y egresos</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Segregación por tipo de residuo</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Coordinación de retiros</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">✓ Reportes de movimientos</li></ul>
+        </div>
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">Beneficios</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Patio siempre ordenado y trazado</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Menor riesgo de contaminación cruzada</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Cumplimiento normativo continuo</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Ahorro en costos de disposición</li></ul>
+        </div>
+      </div>
+      <div style="margin-top:28px"><a href="contacto.html" style="display:inline-block;background:#F8EA37;color:#092737;padding:12px 24px;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.8px">Cotizar este servicio →</a></div>
+    </div>
+  </div>
+</section></div>
+<div id="srv-04" data-aos="fade-up"><section style="background:#f6f6f6">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr" class="srv-block">
+    <div style="padding:52px 48px;display:flex;flex-direction:column;justify-content:center">
+      <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">SERVICIO</span>
+      <h2 style="font-family:Open Sans,sans-serif;font-size:28px;font-weight:800;color:#092737;margin-bottom:16px;line-height:1.3">Valorización de Residuos Plásticos</h2>
+      <p style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.8;margin-bottom:28px">En alianza con POCK retiramos los plásticos de obra (PET, HDPE, PVC y otros) para transformarlos en productos de alta calidad: sustituto del wood, fierro y hormigón.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">¿Qué incluye?</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Retiro de plásticos PET, HDPE, PVC</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Clasificación y pretratamiento</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Coordinación con planta POCK</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">✓ Certificado de valorización</li></ul>
+        </div>
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">Beneficios</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ El 90% del plástico es reciclable</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Residuos → productos de alta calidad</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Cumplimiento Ley REP plásticos</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Impacto ambiental medible</li></ul>
+        </div>
+      </div>
+      <div style="margin-top:28px"><a href="contacto.html" style="display:inline-block;background:#F8EA37;color:#092737;padding:12px 24px;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.8px">Cotizar este servicio →</a></div>
+    </div>
+    <div style="background:#eef3f6;min-height:440px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border:2px dashed rgba(9,39,55,.12)">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="rgba(9,39,55,.2)"><path d="M8 5v14l11-7z"/></svg>
+      <div style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:600;color:rgba(9,39,55,.35);letter-spacing:1px;text-transform:uppercase;text-align:center;padding:0 32px">VIDEO PENDIENTE<br><span style="font-size:11px;opacity:.7;font-weight:400">Video POCK — Proceso de valorización de plásticos</span></div>
+    </div>
+  </div>
+</section></div>
+<div id="srv-05" data-aos="fade-up"><section style="background:#fff">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr" class="srv-block">
+    <div style="background:#eef3f6;min-height:440px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border:2px dashed rgba(9,39,55,.12)">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="rgba(9,39,55,.2)"><path d="M8 5v14l11-7z"/></svg>
+      <div style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:600;color:rgba(9,39,55,.35);letter-spacing:1px;text-transform:uppercase;text-align:center;padding:0 32px">VIDEO PENDIENTE<br><span style="font-size:11px;opacity:.7;font-weight:400">Video maestranza + planta — mismo día de grabación</span></div>
+    </div>
+    <div style="padding:52px 48px;display:flex;flex-direction:column;justify-content:center">
+      <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">SERVICIO</span>
+      <h2 style="font-family:Open Sans,sans-serif;font-size:28px;font-weight:800;color:#092737;margin-bottom:16px;line-height:1.3">Pretratamiento de Residuos Valorizables</h2>
+      <p style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.8;margin-bottom:28px">Clasificamos, trituramos y acondicionamos residuos de construcción para maximizar su valorización. Maderas, plásticos, cartones y metales preparados para su reinserción en el ciclo productivo.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">¿Qué incluye?</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Clasificación por tipo de material</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Trituración y reducción de volumen</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Acondicionamiento para recicladores</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">✓ Certificado de pretratamiento</li></ul>
+        </div>
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">Beneficios</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Hasta 80% reducción de volumen</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Mayor valor en reciclaje</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Menor costo de transporte</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Cumplimiento normativo</li></ul>
+        </div>
+      </div>
+      <div style="margin-top:28px"><a href="contacto.html" style="display:inline-block;background:#F8EA37;color:#092737;padding:12px 24px;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.8px">Cotizar este servicio →</a></div>
+    </div>
+  </div>
+</section></div>
+<div id="srv-06" data-aos="fade-up"><section style="background:#f6f6f6">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr" class="srv-block">
+    <div style="padding:52px 48px;display:flex;flex-direction:column;justify-content:center">
+      <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">SERVICIO</span>
+      <h2 style="font-family:Open Sans,sans-serif;font-size:28px;font-weight:800;color:#092737;margin-bottom:16px;line-height:1.3">Trazabilidad Total</h2>
+      <blockquote style="font-family:Open Sans,sans-serif;font-size:20px;font-weight:800;color:#092737;border-left:4px solid #F8EA37;padding-left:20px;margin:0 0 24px;line-height:1.3">"Lo que no se mide,<br>no se reduce."</blockquote>
+      <p style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.8;margin-bottom:28px">Documentamos cada residuo desde su generación hasta la disposición final. Portal digital con reportes en tiempo real, certificados automáticos y datos para Ley REP y reporting ESG.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">¿Qué incluye?</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #e8e8e8">✓ Portal digital de trazabilidad</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #e8e8e8">✓ Registro de cada retiro</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #e8e8e8">✓ Certificados automáticos</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">✓ Reportes Ley REP y ESG</li></ul>
+        </div>
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">Beneficios</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Visibilidad total en tiempo real</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ 0 multas por incumplimiento</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Datos para metas de sustentabilidad</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Acceso 24/7 desde cualquier lugar</li></ul>
+        </div>
+      </div>
+      <div style="margin-top:28px"><a href="contacto.html" style="display:inline-block;background:#F8EA37;color:#092737;padding:12px 24px;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.8px">Cotizar este servicio →</a></div>
+    </div>
+    <div style="background:#092737;padding:44px;display:flex;flex-direction:column;justify-content:center;gap:18px">
+      <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;color:#F8EA37;letter-spacing:3px;text-transform:uppercase">DISTRIBUCIÓN DE RESIDUOS VALORIZADOS</div>
+      <div><div style="display:flex;justify-content:space-between;margin-bottom:7px"><span style="font-family:Open Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.65)">Plásticos → POCK</span><span style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:700;color:#F8EA37">42%</span></div><div style="height:6px;background:rgba(255,255,255,.1)"><div style="height:100%;width:42%;background:#F8EA37"></div></div></div>
+      <div><div style="display:flex;justify-content:space-between;margin-bottom:7px"><span style="font-family:Open Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.65)">Madera reutilizada</span><span style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:700;color:#F8EA37">28%</span></div><div style="height:6px;background:rgba(255,255,255,.1)"><div style="height:100%;width:28%;background:#F8EA37"></div></div></div>
+      <div><div style="display:flex;justify-content:space-between;margin-bottom:7px"><span style="font-family:Open Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.65)">Papel y Cartón</span><span style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:700;color:#F8EA37">18%</span></div><div style="height:6px;background:rgba(255,255,255,.1)"><div style="height:100%;width:18%;background:#F8EA37"></div></div></div>
+      <div><div style="display:flex;justify-content:space-between;margin-bottom:7px"><span style="font-family:Open Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.65)">Metales</span><span style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:700;color:#F8EA37">8%</span></div><div style="height:6px;background:rgba(255,255,255,.1)"><div style="height:100%;width:8%;background:#F8EA37"></div></div></div>
+      <div><div style="display:flex;justify-content:space-between;margin-bottom:7px"><span style="font-family:Open Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.65)">Otros valorizables</span><span style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:700;color:#F8EA37">4%</span></div><div style="height:6px;background:rgba(255,255,255,.1)"><div style="height:100%;width:4%;background:#F8EA37"></div></div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px">
+        <div style="background:rgba(255,255,255,.06);padding:14px;border-left:3px solid #F8EA37"><div style="font-family:Open Sans,sans-serif;font-size:20px;font-weight:800;color:#F8EA37;line-height:1">2.274 m³</div><div style="font-family:Open Sans,sans-serif;font-size:10px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-top:4px">Trazados</div></div>
+        <div style="background:rgba(255,255,255,.06);padding:14px;border-left:3px solid #F8EA37"><div style="font-family:Open Sans,sans-serif;font-size:20px;font-weight:800;color:#F8EA37;line-height:1">100%</div><div style="font-family:Open Sans,sans-serif;font-size:10px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-top:4px">Certificados</div></div>
+        <div style="background:rgba(255,255,255,.06);padding:14px;border-left:3px solid #F8EA37"><div style="font-family:Open Sans,sans-serif;font-size:20px;font-weight:800;color:#F8EA37;line-height:1">54</div><div style="font-family:Open Sans,sans-serif;font-size:10px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-top:4px">Obras con reporte</div></div>
+        <div style="background:rgba(255,255,255,.06);padding:14px;border-left:3px solid #F8EA37"><div style="font-family:Open Sans,sans-serif;font-size:20px;font-weight:800;color:#F8EA37;line-height:1">0</div><div style="font-family:Open Sans,sans-serif;font-size:10px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-top:4px">Incumplimientos</div></div>
+      </div>
+    </div>
+  </div>
+</section></div>
+<div id="srv-07" data-aos="fade-up"><section style="background:#fff">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr" class="srv-block">
+    <div style="background:#eef3f6;min-height:440px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border:2px dashed rgba(9,39,55,.12)">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="rgba(9,39,55,.2)"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+      <div style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:600;color:rgba(9,39,55,.35);letter-spacing:1px;text-transform:uppercase;text-align:center;padding:0 32px">FOTOS PENDIENTES<br><span style="font-size:11px;opacity:.7;font-weight:400">Distintos tipos de contenedores para RESPEL</span></div>
+    </div>
+    <div style="padding:52px 48px;display:flex;flex-direction:column;justify-content:center">
+      <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">SERVICIO</span>
+      <h2 style="font-family:Open Sans,sans-serif;font-size:28px;font-weight:800;color:#092737;margin-bottom:16px;line-height:1.3">Soluciones para Residuos Peligrosos</h2>
+      <p style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.8;margin-bottom:28px">Gestión integral de residuos peligrosos (RESPEL) con bodegas certificadas DS43/RF120, retiro por gestores autorizados y documentación RETC. Cumplimiento normativo garantizado.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">¿Qué incluye?</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Bodegas RESPEL certificadas DS43</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Contenedores por tipo de RESPEL</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Coordinación con gestores autorizados</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">✓ Documentación RETC completa</li></ul>
+        </div>
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">Beneficios</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Cumplimiento DS148 asegurado</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Sin riesgos de multas SMA</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Trazabilidad desde el origen</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Documentación RETC lista</li></ul>
+        </div>
+      </div>
+      <div style="margin-top:28px"><a href="contacto.html" style="display:inline-block;background:#F8EA37;color:#092737;padding:12px 24px;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.8px">Cotizar este servicio →</a></div>
+    </div>
+  </div>
+</section></div>
+<div id="srv-08" data-aos="fade-up"><section style="background:#f6f6f6">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr" class="srv-block">
+    <div style="padding:52px 48px;display:flex;flex-direction:column;justify-content:center">
+      <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">SERVICIO</span>
+      <h2 style="font-family:Open Sans,sans-serif;font-size:28px;font-weight:800;color:#092737;margin-bottom:16px;line-height:1.3">Municipios</h2>
+      <p style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.8;margin-bottom:28px">Diseñamos, fabricamos e instalamos puntos limpios municipales para recolección diferenciada en espacios públicos, parques y centros comunitarios. Solución integral para Ley REP municipal.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">¿Qué incluye?</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Diseño y fabricación del punto limpio</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Señalética y capacitación vecinal</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0;border-bottom:1px solid #f0f0f0">✓ Coordinación de retiros periódicos</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">✓ Reportes de valorización al municipio</li></ul>
+        </div>
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#092737;margin-bottom:12px">Beneficios</div>
+          <ul style="list-style:none"><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Cumplimiento Ley REP municipal</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Mayor participación ciudadana</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Datos para reportes ambientales</li><li style="font-family:Open Sans,sans-serif;font-size:13px;color:#555;padding:6px 0">→ Diseño adaptable a cada espacio</li></ul>
+        </div>
+      </div>
+      <div style="margin-top:28px"><a href="contacto.html" style="display:inline-block;background:#F8EA37;color:#092737;padding:12px 24px;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.8px">Cotizar este servicio →</a></div>
+    </div>
+    <div style="background:#eef3f6;min-height:440px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border:2px dashed rgba(9,39,55,.12)">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="rgba(9,39,55,.2)"><path d="M8 5v14l11-7z"/></svg>
+      <div style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:600;color:rgba(9,39,55,.35);letter-spacing:1px;text-transform:uppercase;text-align:center;padding:0 32px">VIDEO PENDIENTE<br><span style="font-size:11px;opacity:.7;font-weight:400">Video punto limpio municipal</span></div>
+    </div>
+  </div>
+</section></div>
+
+<!-- CTA FINAL -->
+<section style="background:#F8EA37;padding:80px 24px;text-align:center">
+  <div style="max-width:700px;margin:0 auto">
+    <h2 style="font-family:Open Sans,sans-serif;font-size:36px;font-weight:800;color:#092737;margin-bottom:16px">¿Necesitas un plan a medida?</h2>
+    <p style="font-family:Open Sans,sans-serif;font-size:16px;color:rgba(9,39,55,.75);margin-bottom:36px;line-height:1.7">Cuéntanos sobre tu proyecto y combinamos los servicios que mejor se adaptan a tus necesidades.</p>
+    <a href="contacto.html" style="display:inline-block;background:#092737;color:#fff;padding:16px 40px;font-family:Open Sans,sans-serif;font-size:14px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:1px">Cotizar ahora →</a>
+  </div>
+</section>
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/56984488002" target="_blank" style="position:fixed;bottom:28px;right:28px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.25);z-index:9999;transition:transform .2s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<a href="https://wa.me/56984488002" target="_blank" style="position:fixed;bottom:28px;right:28px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.25);z-index:9999;transition:transform .2s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" title="WhatsApp TOL">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<footer style="background:#092737;padding:52px 40px 28px;color:#fff;font-family:Open Sans,sans-serif;position:relative;z-index:6">
+  <div style="max-width:1200px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px">
+      <div>
+        <a href="index.html"><img src="logo.png" alt="TOL"></a>
+        <p style="font-size:13px;color:rgba(255,255,255,.55);line-height:1.7">Gestión integral de residuos industriales y constructivos en La Araucanía.</p>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Servicios</div>
+        <div style="margin-bottom:8px"><a href="servicios.html#srv-01" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Asesoría en Gestión de Residuos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-02" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Transporte y Disposición de Residuos No Peligrosos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-03" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Administración de Patio de Residuos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-04" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Valorización de Residuos Plásticos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-05" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Pretratamiento de Residuos Valorizables</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-06" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Trazabilidad Total</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-07" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Soluciones para Residuos Peligrosos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-08" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Municipios</a></div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Empresa</div>
+        <div style="margin-bottom:8px"><a href="/nosotros.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Nosotros</a></div><div style="margin-bottom:8px"><a href="/casos-de-exito.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Casos de Éxito</a></div><div style="margin-bottom:8px"><a href="/planta.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Nuestra Planta</a></div><div style="margin-bottom:8px"><a href="/app-trazabilidad.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">APP Trazabilidad</a></div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Contacto</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.6);line-height:1.9">
+          paula@tolpucon.cl<br>+56 9 8448 8002<br>+56 9 3913 2933<br>Camino Villarrica-Freire Km3<br>Villarrica, La Araucanía
+        </div>
+        <a href="https://tolpucon-develop.netlify.app/#/login" target="_blank" style="display:inline-block;margin-top:16px;border:1px solid #F8EA37;color:#F8EA37;font-size:12px;font-weight:700;padding:8px 16px;text-decoration:none;text-transform:uppercase;letter-spacing:1px">Portal Clientes →</a>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <span style="font-size:12px;color:rgba(255,255,255,.3)">© 2026 TOL Gestión de Residuos · Villarrica, La Araucanía</span>
+      <div style="display:flex;gap:16px">
+        <a href="https://instagram.com/tolpucon" target="_blank" style="font-size:12px;color:rgba(255,255,255,.4);text-decoration:none">Instagram</a>
+        <a href="https://facebook.com/tolpucon" target="_blank" style="font-size:12px;color:rgba(255,255,255,.4);text-decoration:none">Facebook</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({duration:700,easing:'ease-out-cubic',once:true,offset:60});</script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto — TOL Gestión de Residuos</title>
+<meta name="description" content="Contacta a TOL para gestión de residuos en Chile. Cotiza tu proyecto o consulta nuestros servicios.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Open Sans,sans-serif;color:#111111}
+a{text-decoration:none;color:inherit}
+[data-aos]{opacity:0}
+.form-input{width:100%;padding:14px 16px;border:1px solid #ddd;font-family:Open Sans,sans-serif;font-size:14px;color:#111111;background:#fff;outline:none;transition:border-color .2s}
+.form-input:focus{border-color:#092737}
+.form-label{font-family:Open Sans,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#092737;display:block;margin-bottom:6px}
+@media(max-width:768px){
+  .two-col{grid-template-columns:1fr!important}
+  .info-grid{grid-template-columns:1fr!important}
+  h1{font-size:34px!important}
+}
+
+/* HERO */
+.hero{background:#092737;padding:72px 64px 64px;position:relative;overflow:hidden}
+.hero.with-photo{background:linear-gradient(rgba(9,39,55,.88),rgba(9,39,55,.94)),url('images/hero/tol-camion.png') center/cover no-repeat}
+.hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,.015) 0,rgba(255,255,255,.015) 1px,transparent 0,transparent 50%);background-size:20px 20px}
+.hero-inner{max-width:1200px;margin:0 auto;position:relative}
+.hero-tag{display:inline-block;background:#F8EA37;color:#092737;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:4px 12px;margin-bottom:20px}
+.hero h1{font-size:52px;font-weight:800;color:#fff;line-height:1.05;max-width:700px;margin-bottom:16px}
+.hero p{font-size:16px;font-weight:300;color:rgba(255,255,255,.65);max-width:540px;line-height:1.7;margin-bottom:28px}
+@media(max-width:900px){.hero{padding:48px 24px}.hero h1{font-size:34px}}
+</style>
+</head>
+<body>
+
+<style>
+.tol-nav{position:fixed;top:0;left:0;right:0;z-index:9000;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 64px;height:80px;border-bottom:3px solid #F8EA37;box-shadow:0 2px 4px rgba(0,0,0,.08)}
+.tol-nav .logo img{height:40px;width:auto;display:block}
+.tol-nav .links{display:flex;align-items:center;gap:8px}
+.nav-link{font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(9,39,55,.65);text-decoration:none;text-transform:uppercase;letter-spacing:.8px;padding:8px 12px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.nav-link:hover,.nav-link.active{color:#092737;border-bottom-color:#F8EA37}
+.nav-cta{background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-decoration:none;padding:10px 20px;text-transform:uppercase;letter-spacing:.8px;margin-left:16px;transition:opacity .2s}
+.nav-cta:hover{opacity:.85}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.nav-hamburger span{width:24px;height:2px;background:#092737;display:block;transition:.3s}
+.mob-overlay{display:none;position:fixed;inset:0;background:#092737;z-index:8999;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.mob-overlay.open{display:flex}
+.mob-link{font-family:Open Sans,sans-serif;font-size:20px;font-weight:600;color:rgba(255,255,255,.8);text-decoration:none;text-transform:uppercase;letter-spacing:1px;padding:16px;transition:color .2s}
+.mob-link:hover{color:#F8EA37}
+.mob-close{position:absolute;top:24px;right:32px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer}
+body{padding-top:80px}
+@media(max-width:900px){
+  .tol-nav .links{display:none}
+  .nav-hamburger{display:flex}
+}
+@media(max-width:600px){
+  .tol-nav{padding:0 20px}
+}
+</style>
+
+<nav class="tol-nav">
+  <a href="index.html" class="logo"><img src="logo.png" alt="TOL"></a>
+  <div class="links">
+    <a href="nosotros.html" class="nav-link">Nosotros</a><a href="servicios.html" class="nav-link">Servicios</a><a href="planta.html" class="nav-link">Nuestra Planta</a><a href="equipos.html" class="nav-link">Equipos</a><a href="casos-de-exito.html" class="nav-link">Casos de Éxito</a><a href="app-trazabilidad.html" class="nav-link">APP</a>
+    <a href="https://www.instagram.com/tolpucon/" target="_blank" style="display:flex;align-items:center;color:rgba(9,39,55,.6);margin-left:8px;transition:color .2s" title="Instagram TOL"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+    <a href="contacto.html" class="nav-cta">Cotizar</a>
+  </div>
+  <button class="nav-hamburger" id="tolHamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mob-overlay" id="tolMobMenu">
+  <button class="mob-close" id="tolMobClose">&times;</button>
+  <a href="index.html" class="mob-link">Inicio</a><a href="nosotros.html" class="mob-link">Nosotros</a><a href="servicios.html" class="mob-link">Servicios</a><a href="planta.html" class="mob-link">Nuestra Planta</a><a href="equipos.html" class="mob-link">Equipos</a><a href="casos-de-exito.html" class="mob-link">Casos de Éxito</a><a href="app-trazabilidad.html" class="mob-link">APP</a>
+  <a href="contacto.html" style="margin-top:16px;background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:16px;font-weight:700;text-decoration:none;padding:14px 32px;text-transform:uppercase">Cotizar</a>
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById('tolHamburger');
+  var menu=document.getElementById('tolMobMenu');
+  var close=document.getElementById('tolMobClose');
+  if(btn)btn.addEventListener('click',function(){menu.classList.add('open')});
+  if(close)close.addEventListener('click',function(){menu.classList.remove('open')});
+  // Auto-cerrar al hacer click en un link
+  document.querySelectorAll('.mob-link').forEach(function(l){
+    l.addEventListener('click',function(){menu.classList.remove('open')});
+  });
+  // Marcar link activo
+  var path=window.location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav-link,.mob-link').forEach(function(l){
+    if(l.href.includes(path))l.classList.add('active');
+  });
+})();
+</script>
+
+<!-- HERO -->
+<div class="hero with-photo">
+  <div class="hero-inner">
+    <div class="hero-tag" data-aos="fade-up">CONTACTO</div>
+    <h1 data-aos="fade-up" data-aos-delay="80">¿Cómo podemos ayudarte?</h1>
+    <p data-aos="fade-up" data-aos-delay="160">Cuéntanos sobre tu proyecto y te contactamos en menos de 24 horas con una propuesta a medida.</p>
+  </div>
+</div>
+
+<!-- FORMULARIO + INFO -->
+<section style="background:#f6f6f6;padding:80px 64px">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px" class="two-col">
+
+    <!-- FORM -->
+    <div data-aos="fade-right">
+      <div style="background:#fff;padding:48px">
+        <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">FORMULARIO DE CONTACTO</span>
+        <h2 style="font-family:Open Sans,sans-serif;font-size:28px;font-weight:800;color:#092737;margin-bottom:32px">Envíanos tu consulta</h2>
+        <form id="tolContactForm" style="display:flex;flex-direction:column;gap:20px">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div>
+              <label class="form-label">Nombre *</label>
+              <input class="form-input" type="text" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div>
+              <label class="form-label">Empresa</label>
+              <input class="form-input" type="text" name="empresa" placeholder="Nombre de tu empresa">
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div>
+              <label class="form-label">Email *</label>
+              <input class="form-input" type="email" name="email" placeholder="tu@email.com" required>
+            </div>
+            <div>
+              <label class="form-label">Teléfono</label>
+              <input class="form-input" type="tel" name="telefono" placeholder="+56 9 xxxxxxxx">
+            </div>
+          </div>
+          <div>
+            <label class="form-label">Servicio de interés</label>
+            <select class="form-input" name="servicio" style="cursor:pointer">
+              <option value="">Selecciona un servicio</option>
+              <option>Asesoría en Gestión de Residuos</option>
+              <option>Transporte y Disposición de Residuos No Peligrosos</option>
+              <option>Administración de Patio de Residuos</option>
+              <option>Valorización de Residuos Plásticos</option>
+              <option>Pretratamiento de Residuos Valorizables</option>
+              <option>Trazabilidad Total</option>
+              <option>Soluciones para Residuos Peligrosos</option>
+              <option>Municipios</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label">Ciudad / Región</label>
+            <input class="form-input" type="text" name="ciudad" placeholder="¿Dónde se ubica tu proyecto?">
+          </div>
+          <div>
+            <label class="form-label">Mensaje *</label>
+            <textarea class="form-input" name="mensaje" rows="5" placeholder="Cuéntanos sobre tu proyecto, tipo de residuos, volumen estimado..." required style="resize:vertical"></textarea>
+          </div>
+          <button type="submit" style="background:#092737;color:#fff;border:none;padding:16px;font-family:Open Sans,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;transition:background .2s" onmouseover="this.style.background='#0a3448'" onmouseout="this.style.background='#092737'">Enviar mensaje →</button>
+        </form>
+        <div id="formSuccess" style="display:none;text-align:center;padding:40px 0">
+          <div style="font-size:48px;margin-bottom:16px">✅</div>
+          <h3 style="font-family:Open Sans,sans-serif;font-size:22px;font-weight:700;color:#092737;margin-bottom:12px">¡Mensaje enviado!</h3>
+          <p style="font-family:Open Sans,sans-serif;font-size:15px;color:#666">Te contactaremos en menos de 24 horas hábiles.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div data-aos="fade-left" style="display:flex;flex-direction:column;gap:32px">
+      <div>
+        <span style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">INFORMACIÓN DE CONTACTO</span>
+        <h2 style="font-family:Open Sans,sans-serif;font-size:28px;font-weight:800;color:#092737;margin-bottom:24px">También puedes<br>contactarnos directo</h2>
+      </div>
+
+      <div style="display:flex;gap:20px;align-items:flex-start">
+        <div style="width:48px;height:48px;background:#092737;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#092737;margin-bottom:4px">Email</div>
+          <div style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.7">paula@tolpucon.cl</div>
+        </div>
+      </div><div style="display:flex;gap:20px;align-items:flex-start">
+        <div style="width:48px;height:48px;background:#092737;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#092737;margin-bottom:4px">Teléfonos</div>
+          <div style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.7">+56 9 8448 8002<br>+56 9 3913 2933</div>
+        </div>
+      </div><div style="display:flex;gap:20px;align-items:flex-start">
+        <div style="width:48px;height:48px;background:#092737;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#092737;margin-bottom:4px">Dirección</div>
+          <div style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.7">Camino Villarrica-Freire Km3<br>Villarrica, Chile</div>
+        </div>
+      </div><div style="display:flex;gap:20px;align-items:flex-start">
+        <div style="width:48px;height:48px;background:#092737;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+        <div>
+          <div style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#092737;margin-bottom:4px">WhatsApp</div>
+          <div style="font-family:Open Sans,sans-serif;font-size:15px;color:#555;line-height:1.7"><a href="https://wa.me/56984488002" style="color:#25D366;font-weight:700">+56 9 8448 8002</a></div>
+        </div>
+      </div>
+
+      <!-- Horario -->
+      <div style="background:#092737;padding:28px">
+        <div style="font-family:Open Sans,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#F8EA37;margin-bottom:12px">Horario de atención</div>
+        <div style="font-family:Open Sans,sans-serif;font-size:14px;color:rgba(255,255,255,.7);line-height:1.8">
+          Lunes a Viernes: 8:30 — 18:00<br>
+          Sábado: 9:00 — 13:00
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RRSS -->
+<section style="background:#092737;padding:48px 64px;text-align:center">
+  <div style="max-width:600px;margin:0 auto">
+    <p style="font-family:Open Sans,sans-serif;font-size:14px;color:rgba(255,255,255,.5);margin-bottom:20px;text-transform:uppercase;letter-spacing:2px">Síguenos</p>
+    <div style="display:flex;gap:16px;justify-content:center">
+      <a href="https://instagram.com/tolpucon" target="_blank" style="background:rgba(255,255,255,.08);color:#fff;padding:12px 24px;font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:8px;transition:background .2s" onmouseover="this.style.background='rgba(255,255,255,.15)'" onmouseout="this.style.background='rgba(255,255,255,.08)'">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @tolpucon
+      </a>
+      <a href="https://facebook.com/tolpucon" target="_blank" style="background:rgba(255,255,255,.08);color:#fff;padding:12px 24px;font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:8px;transition:background .2s" onmouseover="this.style.background='rgba(255,255,255,.15)'" onmouseout="this.style.background='rgba(255,255,255,.08)'">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        tolpucon
+      </a>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/56984488002" target="_blank" style="position:fixed;bottom:28px;right:28px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.25);z-index:9999;transition:transform .2s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" title="WhatsApp TOL">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<footer style="background:#092737;padding:52px 40px 28px;color:#fff;font-family:Open Sans,sans-serif;position:relative;z-index:6">
+  <div style="max-width:1200px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px">
+      <div>
+        <a href="index.html"><img src="logo.png" alt="TOL"></a>
+        <p style="font-size:13px;color:rgba(255,255,255,.55);line-height:1.7">Gestión integral de residuos industriales y constructivos en La Araucanía.</p>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Servicios</div>
+        <div style="margin-bottom:8px"><a href="servicios.html#srv-01" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Asesoría en Gestión de Residuos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-02" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Transporte y Disposición de Residuos No Peligrosos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-03" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Administración de Patio de Residuos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-04" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Valorización de Residuos Plásticos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-05" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Pretratamiento de Residuos Valorizables</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-06" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Trazabilidad Total</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-07" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Soluciones para Residuos Peligrosos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-08" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Municipios</a></div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Empresa</div>
+        <div style="margin-bottom:8px"><a href="/nosotros.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Nosotros</a></div><div style="margin-bottom:8px"><a href="/casos-de-exito.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Casos de Éxito</a></div><div style="margin-bottom:8px"><a href="/planta.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Nuestra Planta</a></div><div style="margin-bottom:8px"><a href="/app-trazabilidad.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">APP Trazabilidad</a></div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Contacto</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.6);line-height:1.9">
+          paula@tolpucon.cl<br>+56 9 8448 8002<br>+56 9 3913 2933<br>Camino Villarrica-Freire Km3<br>Villarrica, La Araucanía
+        </div>
+        <a href="https://tolpucon-develop.netlify.app/#/login" target="_blank" style="display:inline-block;margin-top:16px;border:1px solid #F8EA37;color:#F8EA37;font-size:12px;font-weight:700;padding:8px 16px;text-decoration:none;text-transform:uppercase;letter-spacing:1px">Portal Clientes →</a>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <span style="font-size:12px;color:rgba(255,255,255,.3)">© 2026 TOL Gestión de Residuos · Villarrica, La Araucanía</span>
+      <div style="display:flex;gap:16px">
+        <a href="https://instagram.com/tolpucon" target="_blank" style="font-size:12px;color:rgba(255,255,255,.4);text-decoration:none">Instagram</a>
+        <a href="https://facebook.com/tolpucon" target="_blank" style="font-size:12px;color:rgba(255,255,255,.4);text-decoration:none">Facebook</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({duration:700,easing:'ease-out-cubic',once:true,offset:80});
+document.getElementById('tolContactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  this.style.display='none';
+  document.getElementById('formSuccess').style.display='block';
+});
+</script>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/56984488002" target="_blank" style="position:fixed;bottom:28px;right:28px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.25);z-index:9999">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+</body>
+</html>

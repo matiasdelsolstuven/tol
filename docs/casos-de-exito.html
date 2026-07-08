@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casos de Éxito — TOL Pucón</title>
+<meta name="description" content="Casos de éxito en gestión de residuos TOL">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Open Sans,sans-serif;color:#111}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+[data-aos]{opacity:0}
+@media(max-width:768px){
+  nav div:first-of-type{display:none!important}
+  [style*="grid-template-columns:repeat(4"]{grid-template-columns:repeat(2,1fr)!important}
+  [style*="grid-template-columns:repeat(3"]{grid-template-columns:1fr!important}
+  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
+  [style*="font-size:52px"]{font-size:32px!important}
+  [style*="font-size:44px"]{font-size:28px!important}
+}
+
+/* HERO */
+.hero{background:#092737;padding:72px 64px 64px;position:relative;overflow:hidden}
+.hero.with-photo{background:linear-gradient(rgba(9,39,55,.88),rgba(9,39,55,.94)),url('images/hero/tol-camion.png') center/cover no-repeat}
+.hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,.015) 0,rgba(255,255,255,.015) 1px,transparent 0,transparent 50%);background-size:20px 20px}
+.hero-inner{max-width:1200px;margin:0 auto;position:relative}
+.hero-tag{display:inline-block;background:#F8EA37;color:#092737;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:4px 12px;margin-bottom:20px}
+.hero h1{font-size:52px;font-weight:800;color:#fff;line-height:1.05;max-width:700px;margin-bottom:16px}
+.hero p{font-size:16px;font-weight:300;color:rgba(255,255,255,.65);max-width:540px;line-height:1.7;margin-bottom:28px}
+@media(max-width:900px){.hero{padding:48px 24px}.hero h1{font-size:34px}}
+</style>
+</head>
+<body>
+
+<style>
+.tol-nav{position:fixed;top:0;left:0;right:0;z-index:9000;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:72px;border-bottom:3px solid #F8EA37;box-shadow:0 2px 4px rgba(0,0,0,.08)}
+.tol-nav .logo img{height:40px;width:auto;display:block}
+.tol-nav .links{display:flex;align-items:center;gap:8px}
+.nav-link{font-family:Open Sans,sans-serif;font-size:13px;font-weight:600;color:rgba(9,39,55,.65);text-decoration:none;text-transform:uppercase;letter-spacing:.8px;padding:8px 12px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.nav-link:hover,.nav-link.active{color:#092737;border-bottom-color:#F8EA37}
+.nav-cta{background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;text-decoration:none;padding:10px 20px;text-transform:uppercase;letter-spacing:.8px;margin-left:16px;transition:opacity .2s}
+.nav-cta:hover{opacity:.85}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.nav-hamburger span{width:24px;height:2px;background:#092737;display:block;transition:.3s}
+.mob-overlay{display:none;position:fixed;inset:0;background:#092737;z-index:8999;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.mob-overlay.open{display:flex}
+.mob-link{font-family:Open Sans,sans-serif;font-size:20px;font-weight:600;color:rgba(255,255,255,.8);text-decoration:none;text-transform:uppercase;letter-spacing:1px;padding:16px;transition:color .2s}
+.mob-link:hover{color:#F8EA37}
+.mob-close{position:absolute;top:24px;right:32px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer}
+
+@media(max-width:900px){
+  .tol-nav .links{display:none}
+  .nav-hamburger{display:flex}
+}
+@media(max-width:600px){
+  .tol-nav{padding:0 20px}
+}
+</style>
+
+<nav class="tol-nav">
+  <a href="index.html" class="logo"><img src="logo.png" alt="TOL"></a>
+  <div class="links">
+    <a href="nosotros.html" class="nav-link">Nosotros</a><a href="servicios.html" class="nav-link">Servicios</a><a href="planta.html" class="nav-link">Nuestra Planta</a><a href="equipos.html" class="nav-link">Equipos</a><a href="casos-de-exito.html" class="nav-link active">Casos de Éxito</a><a href="app-trazabilidad.html" class="nav-link">APP</a>
+    <a href="https://www.instagram.com/tolpucon/" target="_blank" style="display:flex;align-items:center;color:rgba(9,39,55,.6);margin-left:8px;transition:color .2s" title="Instagram TOL"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+    <a href="contacto.html" class="nav-cta">Cotizar</a>
+  </div>
+  <button class="nav-hamburger" id="tolHamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mob-overlay" id="tolMobMenu">
+  <button class="mob-close" id="tolMobClose">&times;</button>
+  <a href="index.html" class="mob-link">Inicio</a><a href="nosotros.html" class="mob-link">Nosotros</a><a href="servicios.html" class="mob-link">Servicios</a><a href="planta.html" class="mob-link">Nuestra Planta</a><a href="equipos.html" class="mob-link">Equipos</a><a href="casos-de-exito.html" class="mob-link">Casos de Éxito</a><a href="app-trazabilidad.html" class="mob-link">APP</a>
+  <a href="contacto.html" style="margin-top:16px;background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:16px;font-weight:700;text-decoration:none;padding:14px 32px;text-transform:uppercase">Cotizar</a>
+</div>
+<script>
+(function(){
+  var btn=document.getElementById('tolHamburger');
+  var menu=document.getElementById('tolMobMenu');
+  var close=document.getElementById('tolMobClose');
+  if(btn)btn.addEventListener('click',function(){menu.classList.add('open')});
+  if(close)close.addEventListener('click',function(){menu.classList.remove('open')});
+  document.querySelectorAll('.mob-link').forEach(function(l){
+    l.addEventListener('click',function(){menu.classList.remove('open')});
+  });
+  var path=window.location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav-link,.mob-link').forEach(function(l){
+    if(l.href.includes(path))l.classList.add('active');
+  });
+})();
+</script>
+
+
+<!-- HERO -->
+<div class="hero with-photo">
+  <div class="hero-inner">
+    <div class="hero-tag" data-aos="fade-up">RESULTADOS REALES</div>
+    <h1 data-aos="fade-up" data-aos-delay="80">Casos de Éxito</h1>
+    <p data-aos="fade-up" data-aos-delay="160">Empresas y obras de La Araucanía que transformaron su gestión de residuos con TOL. Resultados verificables, documentados y replicables.</p>
+  </div>
+</div>
+
+<section style="background:#fff;padding:80px 24px">
+  <div style="max-width:1200px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:3px;background:#092737;margin-bottom:80px">
+      <div data-aos="fade-up" data-aos-delay="0" style="background:#fff;padding:40px 28px;text-align:center"><div style="font-family:Open Sans,sans-serif;font-size:48px;font-weight:800;color:#F8EA37;margin-bottom:8px">+40%</div><div style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;color:#092737;text-transform:uppercase;letter-spacing:1px">Reducción residuos en escombrera</div></div><div data-aos="fade-up" data-aos-delay="120" style="background:#fff;padding:40px 28px;text-align:center"><div style="font-family:Open Sans,sans-serif;font-size:48px;font-weight:800;color:#F8EA37;margin-bottom:8px">54</div><div style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;color:#092737;text-transform:uppercase;letter-spacing:1px">Obras gestionadas exitosamente</div></div><div data-aos="fade-up" data-aos-delay="240" style="background:#fff;padding:40px 28px;text-align:center"><div style="font-family:Open Sans,sans-serif;font-size:48px;font-weight:800;color:#F8EA37;margin-bottom:8px">2.274m³</div><div style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;color:#092737;text-transform:uppercase;letter-spacing:1px">Residuos segregados y valorizados</div></div>
+    </div>
+
+    <div style="margin-bottom:56px;text-align:center">
+      <span data-aos="fade-up" style="font-family:Open Sans,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F8EA37;background:#092737;display:inline-block;padding:4px 10px;margin-bottom:16px">PROYECTOS</span>
+      <h2 data-aos="fade-up" data-aos-delay="100" style="font-family:Open Sans,sans-serif;font-size:38px;font-weight:800;color:#092737">Proyectos que marcaron la diferencia</h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+      <div data-aos="fade-up" data-aos-delay="0" style="background:#f6f6f6;padding:0;overflow:hidden">
+        <div style="background:#092737;height:200px;display:flex;align-items:flex-end;padding:24px;position:relative">
+          <span style="position:absolute;top:20px;left:20px;background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:10px;font-weight:700;padding:3px 10px;text-transform:uppercase">Construcción residencial</span>
+          <h3 style="font-family:Open Sans,sans-serif;font-size:20px;font-weight:700;color:#fff;line-height:1.3">Proyecto habitacional en Villarrica — Gestión integral de residuos</h3>
+        </div>
+        <div style="padding:28px">
+          <p style="font-family:Open Sans,sans-serif;font-size:14px;color:#555;line-height:1.7;margin-bottom:20px">Implementamos un sistema de segregación en obra con 4 fracciones. El equipo fue capacitado en 2 sesiones y se instalaron puntos limpios en cada piso durante la construcción.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div style="background:#fff;padding:16px;text-align:center"><div style="font-family:Open Sans,sans-serif;font-size:24px;font-weight:800;color:#F8EA37;background:#092737;width:100%;padding:8px 0;margin-bottom:8px">+40%</div><div style="font-family:Open Sans,sans-serif;font-size:11px;color:#666;text-transform:uppercase;letter-spacing:.5px">Reducción en escombrera</div></div><div style="background:#fff;padding:16px;text-align:center"><div style="font-family:Open Sans,sans-serif;font-size:24px;font-weight:800;color:#F8EA37;background:#092737;width:100%;padding:8px 0;margin-bottom:8px">100%</div><div style="font-family:Open Sans,sans-serif;font-size:11px;color:#666;text-transform:uppercase;letter-spacing:.5px">Trazabilidad</div></div>
+          </div>
+        </div>
+      </div><div data-aos="fade-up" data-aos-delay="100" style="background:#f6f6f6;padding:0;overflow:hidden">
+        <div style="background:#092737;height:200px;display:flex;align-items:flex-end;padding:24px;position:relative">
+          <span style="position:absolute;top:20px;left:20px;background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:10px;font-weight:700;padding:3px 10px;text-transform:uppercase">Demolición</span>
+          <h3 style="font-family:Open Sans,sans-serif;font-size:20px;font-weight:700;color:#fff;line-height:1.3">Demolición selectiva — Recuperación de materiales</h3>
+        </div>
+        <div style="padding:28px">
+          <p style="font-family:Open Sans,sans-serif;font-size:14px;color:#555;line-height:1.7;margin-bottom:20px">Realizamos la demolición de una estructura de 1.200m² con recuperación selectiva de materiales. El 65% de los residuos generados fue reutilizado o valorizado.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div style="background:#fff;padding:16px;text-align:center"><div style="font-family:Open Sans,sans-serif;font-size:24px;font-weight:800;color:#F8EA37;background:#092737;width:100%;padding:8px 0;margin-bottom:8px">65%</div><div style="font-family:Open Sans,sans-serif;font-size:11px;color:#666;text-transform:uppercase;letter-spacing:.5px">Material valorizado</div></div><div style="background:#fff;padding:16px;text-align:center"><div style="font-family:Open Sans,sans-serif;font-size:24px;font-weight:800;color:#F8EA37;background:#092737;width:100%;padding:8px 0;margin-bottom:8px">0</div><div style="font-family:Open Sans,sans-serif;font-size:11px;color:#666;text-transform:uppercase;letter-spacing:.5px">Multas sanitarias</div></div>
+          </div>
+        </div>
+      </div><div data-aos="fade-up" data-aos-delay="200" style="background:#f6f6f6;padding:0;overflow:hidden">
+        <div style="background:#092737;height:200px;display:flex;align-items:flex-end;padding:24px;position:relative">
+          <span style="position:absolute;top:20px;left:20px;background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:10px;font-weight:700;padding:3px 10px;text-transform:uppercase">Obra pública</span>
+          <h3 style="font-family:Open Sans,sans-serif;font-size:20px;font-weight:700;color:#fff;line-height:1.3">Proyecto de infraestructura — Cumplimiento Ley REP</h3>
+        </div>
+        <div style="padding:28px">
+          <p style="font-family:Open Sans,sans-serif;font-size:14px;color:#555;line-height:1.7;margin-bottom:20px">Diseñamos el plan de gestión de residuos para una obra de infraestructura pública, garantizando el cumplimiento de todos los requisitos normativos y la documentación para reportes oficiales.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div style="background:#fff;padding:16px;text-align:center"><div style="font-family:Open Sans,sans-serif;font-size:24px;font-weight:800;color:#F8EA37;background:#092737;width:100%;padding:8px 0;margin-bottom:8px">100%</div><div style="font-family:Open Sans,sans-serif;font-size:11px;color:#666;text-transform:uppercase;letter-spacing:.5px">Cumplimiento normativo</div></div><div style="background:#fff;padding:16px;text-align:center"><div style="font-family:Open Sans,sans-serif;font-size:24px;font-weight:800;color:#F8EA37;background:#092737;width:100%;padding:8px 0;margin-bottom:8px">3x</div><div style="font-family:Open Sans,sans-serif;font-size:11px;color:#666;text-transform:uppercase;letter-spacing:.5px">Informes entregados</div></div>
+          </div>
+        </div>
+      </div><div data-aos="fade-up" data-aos-delay="300" style="background:#f6f6f6;padding:0;overflow:hidden">
+        <div style="background:#092737;height:200px;display:flex;align-items:flex-end;padding:24px;position:relative">
+          <span style="position:absolute;top:20px;left:20px;background:#F8EA37;color:#092737;font-family:Open Sans,sans-serif;font-size:10px;font-weight:700;padding:3px 10px;text-transform:uppercase">Industrial</span>
+          <h3 style="font-family:Open Sans,sans-serif;font-size:20px;font-weight:700;color:#fff;line-height:1.3">Punto limpio corporativo — Empresa de manufactura</h3>
+        </div>
+        <div style="padding:28px">
+          <p style="font-family:Open Sans,sans-serif;font-size:14px;color:#555;line-height:1.7;margin-bottom:20px">Habilitamos un punto limpio permanente con 6 fracciones de separación. Reducimos el volumen enviado a relleno en un 55% durante los primeros 6 meses de operación.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div style="background:#fff;padding:16px;text-align:center"><div style="font-family:Open Sans,sans-serif;font-size:24px;font-weight:800;color:#F8EA37;background:#092737;width:100%;padding:8px 0;margin-bottom:8px">55%</div><div style="font-family:Open Sans,sans-serif;font-size:11px;color:#666;text-transform:uppercase;letter-spacing:.5px">Reducción a relleno</div></div><div style="background:#fff;padding:16px;text-align:center"><div style="font-family:Open Sans,sans-serif;font-size:24px;font-weight:800;color:#F8EA37;background:#092737;width:100%;padding:8px 0;margin-bottom:8px">6</div><div style="font-family:Open Sans,sans-serif;font-size:11px;color:#666;text-transform:uppercase;letter-spacing:.5px">Fracciones segregadas</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#f6f6f6;padding:80px 24px">
+  <div style="max-width:900px;margin:0 auto;text-align:center">
+    <h2 data-aos="fade-up" style="font-family:Open Sans,sans-serif;font-size:36px;font-weight:800;color:#092737;margin-bottom:24px">Lo que dicen nuestros clientes</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px">
+      <div data-aos="fade-up" data-aos-delay="0" style="background:#fff;padding:32px;text-align:left;border-left:4px solid #F8EA37">
+        <p style="font-family:Open Sans,sans-serif;font-size:15px;font-weight:300;color:#092737;line-height:1.7;font-style:italic;margin-bottom:20px">"TOL transformó completamente nuestra forma de manejar los residuos en obra. Los reportes nos permiten cumplir con los requisitos de nuestros clientes corporativos sin esfuerzo adicional."</p>
+        <div style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;color:#092737">Jefe de Obra</div>
+        <div style="font-family:Open Sans,sans-serif;font-size:12px;color:#aaa">Constructora en Villarrica</div>
+      </div><div data-aos="fade-up" data-aos-delay="150" style="background:#fff;padding:32px;text-align:left;border-left:4px solid #F8EA37">
+        <p style="font-family:Open Sans,sans-serif;font-size:15px;font-weight:300;color:#092737;line-height:1.7;font-style:italic;margin-bottom:20px">"Lo que más nos sorprendió fue la reducción real en costos de disposición. En 6 meses recuperamos la inversión en el plan de gestión."</p>
+        <div style="font-family:Open Sans,sans-serif;font-size:13px;font-weight:700;color:#092737">Gerente de Operaciones</div>
+        <div style="font-family:Open Sans,sans-serif;font-size:12px;color:#aaa">Empresa constructora en Pucón</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F8EA37;padding:80px 24px;text-align:center">
+  <div style="max-width:700px;margin:0 auto">
+    <h2 data-aos="fade-up" style="font-family:Open Sans,sans-serif;font-size:36px;font-weight:800;color:#092737;margin-bottom:16px">¿Tu proyecto puede ser el próximo caso de éxito?</h2>
+    <p data-aos="fade-up" data-aos-delay="100" style="font-family:Open Sans,sans-serif;font-size:16px;color:rgba(9,39,55,.75);margin-bottom:36px;line-height:1.7">Cuéntanos sobre tu obra y diseñamos un plan de gestión que genera resultados verificables desde el primer mes.</p>
+    <a data-aos="fade-up" data-aos-delay="200" href="mailto:paula@tolpucon.cl" style="display:inline-block;background:#092737;color:#fff;padding:16px 40px;font-family:Open Sans,sans-serif;font-size:14px;font-weight:700;letter-spacing:1px">Cotizar ahora →</a>
+  </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({duration:700,easing:'ease-out-cubic',once:true,offset:80});</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://wa.me/56984488002" target="_blank" style="position:fixed;bottom:28px;right:28px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.25);z-index:9999;transition:transform .2s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" title="WhatsApp TOL">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<footer style="background:#092737;padding:52px 40px 28px;color:#fff;font-family:Open Sans,sans-serif;position:relative;z-index:6">
+  <div style="max-width:1200px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px">
+      <div>
+        <a href="index.html"><img src="logo.png" alt="TOL"></a>
+        <p style="font-size:13px;color:rgba(255,255,255,.55);line-height:1.7">Gestión integral de residuos industriales y constructivos en La Araucanía.</p>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Servicios</div>
+        <div style="margin-bottom:8px"><a href="servicios.html#srv-01" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Asesoría en Gestión de Residuos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-02" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Transporte y Disposición de Residuos No Peligrosos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-03" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Administración de Patio de Residuos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-04" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Valorización de Residuos Plásticos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-05" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Pretratamiento de Residuos Valorizables</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-06" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Trazabilidad Total</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-07" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Soluciones para Residuos Peligrosos</a></div><div style="margin-bottom:8px"><a href="servicios.html#srv-08" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Municipios</a></div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Empresa</div>
+        <div style="margin-bottom:8px"><a href="/nosotros.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Nosotros</a></div><div style="margin-bottom:8px"><a href="/casos-de-exito.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Casos de Éxito</a></div><div style="margin-bottom:8px"><a href="/planta.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">Nuestra Planta</a></div><div style="margin-bottom:8px"><a href="/app-trazabilidad.html" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none">APP Trazabilidad</a></div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F8EA37;margin-bottom:16px">Contacto</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.6);line-height:1.9">
+          paula@tolpucon.cl<br>+56 9 8448 8002<br>+56 9 3913 2933<br>Camino Villarrica-Freire Km3<br>Villarrica, La Araucanía
+        </div>
+        <a href="https://tolpucon-develop.netlify.app/#/login" target="_blank" style="display:inline-block;margin-top:16px;border:1px solid #F8EA37;color:#F8EA37;font-size:12px;font-weight:700;padding:8px 16px;text-decoration:none;text-transform:uppercase;letter-spacing:1px">Portal Clientes →</a>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <span style="font-size:12px;color:rgba(255,255,255,.3)">© 2026 TOL Gestión de Residuos · Villarrica, La Araucanía</span>
+      <div style="display:flex;gap:16px">
+        <a href="https://instagram.com/tolpucon" target="_blank" style="font-size:12px;color:rgba(255,255,255,.4);text-decoration:none">Instagram</a>
+        <a href="https://facebook.com/tolpucon" target="_blank" style="font-size:12px;color:rgba(255,255,255,.4);text-decoration:none">Facebook</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
