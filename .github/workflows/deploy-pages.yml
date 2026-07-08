@@ -2,7 +2,7 @@ name: Deploy landing to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, claude/github-code-setup-4k9mm7]
     paths:
       - 'docs/**'
       - '.github/workflows/deploy-pages.yml'
